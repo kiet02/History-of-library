@@ -1,7 +1,12 @@
 /* eslint-disable react-native/no-inline-styles */
+import { useSizes } from '@utils/resource/Sizes';
 import { Image, View } from 'react-native';
 
+
+
 export default function App() {
+  const{wp,hp}= useSizes();
+  const gif = require('@utils/resource/image/test.gif');
   return (
     <View
       style={{
@@ -13,8 +18,9 @@ export default function App() {
     >
       <Image
         style={{ width: 100, height: 100 }}
-        source={require('./src/utils/resouce/image/test.gif')}
+        source={gif}
       />
+      <View style={{backgroundColor:'gray', width:wp(100) , height:hp(50)}} ></View>
     </View>
   );
 }
