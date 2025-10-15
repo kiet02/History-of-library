@@ -67,6 +67,7 @@ package-lock.json
 /coverage
 
 # Yarn
+yarn.lock
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
