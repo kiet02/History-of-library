@@ -4,7 +4,8 @@
   "exclude": ["**/node_modules", "**/Pods"],
   "compilerOptions": {
     "paths": {
-      "@utils/*": ["./src/utils/*"]
+      "@utils/*": ["./src/utils/*"],
+      "@screen/*": ["./src/screen/*"]
     }
   }
 }
