@@ -10,6 +10,8 @@ module.exports = {
         alias: {
           '@utils': './src/utils',
           '@screen': './src/screen',
+          '@element': './src/element',
+          '@navigation': './src/navigation',
         },
         extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
       },

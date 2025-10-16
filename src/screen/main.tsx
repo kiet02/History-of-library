@@ -15,7 +15,6 @@ const ITEM_HEIGHT = 100;
 const ITEM_MARGIN = 12;
 const PADDING_VERTICAL = 12;
 const N = 30;
-// export const bottomRef = createRef<BottomSheetMethods>();
 
 export function Main() {
   const [scrollY, setScrollY] = useState(0);
@@ -41,11 +40,7 @@ export function Main() {
     e: GestureUpdateEvent<PanGestureHandlerEventPayload>,
   ) => {
     const yInContent =
-      e.absoluteY -
-      contentTopOnScreen.current +
-      scrollY -
-      PADDING_VERTICAL -
-      20;
+      e.absoluteY - contentTopOnScreen.current + scrollY - PADDING_VERTICAL * 4;
 
     let index = Math.floor(yInContent / (ITEM_HEIGHT + ITEM_MARGIN));
     if (index < 0) index = 0;
@@ -65,7 +60,6 @@ export function Main() {
   const pan = Gesture.Pan()
     .onStart(e => {
       scheduleOnRN(addSelectedItem, e);
-
       console.log('start');
     })
     .onUpdate(e => {

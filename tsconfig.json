@@ -5,7 +5,9 @@
   "compilerOptions": {
     "paths": {
       "@utils/*": ["./src/utils/*"],
-      "@screen/*": ["./src/screen/*"]
+      "@screen/*": ["./src/screen/*"],
+      "@element/*": ["./src/element/*"],
+      "@navigation/*": ["./src/navigation/*"]
     }
   }
 }

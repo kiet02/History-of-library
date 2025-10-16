@@ -1,13 +1,28 @@
-/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import ListScreen from '@screen/ListScreen';
+import SharedTransitionScreen from '@screen/SharedTransitionScreen';
+import { RootStackParamList } from '@navigation/type';
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
-import { Main } from '@screen/Main';
-
-export default function Screen() {
+export default function App() {
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
-      <Main />
-    </GestureHandlerRootView>
+    <NavigationContainer>
+      <Stack.Navigator
+        initialRouteName="List"
+        screenOptions={{ headerShown: false }}
+      >
+        <Stack.Screen name="List" component={ListScreen} />
+        <Stack.Screen
+          name="SharedTransitionScreen"
+          component={SharedTransitionScreen}
+          options={{
+            presentation: 'transparentModal',
+            animation: 'none',
+          }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
