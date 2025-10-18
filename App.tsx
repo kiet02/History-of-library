@@ -1,11 +1,12 @@
+// App.tsx
 import React from 'react';
+import { FormProvider, useForm } from 'react-hook-form';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { RootStackParamList } from '@navigation/type';
-import { Test } from '@screen/Test';
-import { FormProvider, useForm } from 'react-hook-form';
 import { ListScreen } from '@screen/ListScreen';
-const Stack = createNativeStackNavigator<RootStackParamList>();
+import { DetailScreen } from '@screen/DetailScreen';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   const methods = useForm({
@@ -14,18 +15,20 @@ export default function App() {
       pageY: 0,
       width: 0,
       height: 0,
-      borderRadius: 20,
+      borderRadius: 0,
     },
   });
+
   return (
     <FormProvider {...methods}>
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName="List"
+          initialRouteName="ListScreen"
           screenOptions={{ headerShown: false }}
         >
-          <Stack.Screen name="List" component={ListScreen} />
-          <Stack.Screen name="Test" component={Test} />
+          <Stack.Screen name="ListScreen" component={ListScreen} />
+          <Stack.Screen name="Detail" component={DetailScreen} />
+          <Stack.Screen name="Main" component={DetailScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </FormProvider>

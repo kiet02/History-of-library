@@ -2,8 +2,8 @@ import { RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 export type RootStackParamList = {
-  List: undefined;
-  Test: undefined;
+  ListScreen: undefined;
+  Detail: undefined;
   SharedTransitionScreen: {
     item: {
       mediaUrl: number;
