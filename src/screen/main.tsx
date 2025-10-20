@@ -79,7 +79,10 @@ export function Main() {
 
   const cropView = useAnimatedStyle(() => {
     return {
-      width: interpolate(crop.value, [0, 1], [200, 0]),
+      position: 'absolute',
+      width: interpolate(crop.value, [0, 1], [he, 0]),
+      zIndex: 10,
+      backgroundColor: 'white',
     };
   });
 
@@ -100,13 +103,13 @@ export function Main() {
           onScroll={onScrollLeft}
           scrollEventThrottle={16}
           showsVerticalScrollIndicator={true}
-          style={[styles.leftScroll, cropView]}
+          style={cropView}
           bounces={true}
         >
           <Text style={styles.content}>{content}</Text>
         </Animated.ScrollView>
 
-        {/* <Animated.ScrollView
+        <Animated.ScrollView
           ref={rightRef}
           onScroll={onScrollRight}
           scrollEventThrottle={16}
@@ -115,7 +118,7 @@ export function Main() {
           bounces={true}
         >
           <Text style={styles.content}>{content}</Text>
-        </Animated.ScrollView> */}
+        </Animated.ScrollView>
       </View>
       <Button title="ok" onPress={onPress} />
     </SafeAreaView>
@@ -152,7 +155,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fafafa',
     paddingHorizontal: 16,
-    position: 'absolute',
   },
   divider: {
     width: 1,
