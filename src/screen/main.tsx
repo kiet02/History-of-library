@@ -80,7 +80,7 @@ export function Main() {
   const cropView = useAnimatedStyle(() => {
     return {
       position: 'absolute',
-      width: interpolate(crop.value, [0, 1], [he, 0]),
+      width: interpolate(crop.value, [0, 1], [200, 0]),
       zIndex: 10,
       backgroundColor: 'white',
     };
