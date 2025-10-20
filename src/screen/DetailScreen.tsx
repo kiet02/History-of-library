@@ -1,16 +1,18 @@
-/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { AppSharedTransition } from '@element/AppSharedTransition';
-
+const TEST_IMG = require('@utils/resource/image/test.jpg');
 export function DetailScreen() {
   const navigation = useNavigation();
-
   return (
     <>
-      <AppSharedTransition tag="end" overlayMaxOpacity={0.5} easing="outQuad">
-        <View style={{ width: 300, height: 100, backgroundColor: 'red' }} />
+      <AppSharedTransition tag="end" easing="inOut" duration={500}>
+        <Image
+          source={TEST_IMG}
+          style={{ width: '100%', height: '70%', padding: 10 }}
+          resizeMode="cover"
+        />
       </AppSharedTransition>
 
       <View style={styles.container}>
@@ -40,6 +42,7 @@ export function DetailScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+
     justifyContent: 'space-between',
   },
   content: {
@@ -77,7 +80,7 @@ const styles = StyleSheet.create({
   actionButton: {
     margin: 20,
     padding: 16,
-    backgroundColor: 'rgba(255,255,255,0.2)',
+    backgroundColor: 'black',
     borderRadius: 12,
     alignItems: 'center',
   },

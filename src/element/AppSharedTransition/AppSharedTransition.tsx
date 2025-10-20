@@ -1,16 +1,12 @@
 import React from 'react';
 import { AppSharedTransitionEnd, AppSharedTransitionStart } from './item';
+import { TEasingName } from './type';
 
 export type SharedTransitionTag = 'start' | 'end';
 
 type EndSpecificProps = {
-  source?: any;
-  disableClose?: boolean;
-  onClose?: () => void;
-  targetWidth?: number;
-  targetHeight?: number;
-  overlayMaxOpacity?: number;
-  easing?: 'linear' | 'inOutQuad' | 'inOutCubic' | 'outQuad' | 'outCubic';
+  easing?: TEasingName;
+  duration?: number;
 };
 
 export type AppSharedTransitionProps =
@@ -32,7 +28,7 @@ export function AppSharedTransition(props: AppSharedTransitionProps) {
 
   if (props.tag === 'end') {
     return (
-      <AppSharedTransitionEnd easing={props.easing}>
+      <AppSharedTransitionEnd easing={props.easing} duration={props.duration}>
         {props.children}
       </AppSharedTransitionEnd>
     );

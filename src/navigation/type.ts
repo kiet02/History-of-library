@@ -3,6 +3,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 export type RootStackParamList = {
   ListScreen: undefined;
+  Main: undefined;
   Detail: undefined;
   SharedTransitionScreen: {
     item: {

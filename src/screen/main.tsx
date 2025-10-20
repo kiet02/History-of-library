@@ -1,100 +1,166 @@
-/* eslint-disable react-native/no-inline-styles */
-import { useEffect, useRef, useState } from 'react';
-import { NativeScrollEvent, NativeSyntheticEvent, View } from 'react-native';
-import {
-  Gesture,
-  GestureDetector,
-  GestureUpdateEvent,
-  PanGestureHandlerEventPayload,
-  ScrollView,
-  Text,
-} from 'react-native-gesture-handler';
-import { scheduleOnRN } from 'react-native-worklets';
-
-const ITEM_HEIGHT = 100;
-const ITEM_MARGIN = 12;
-const PADDING_VERTICAL = 12;
-const N = 30;
+import React from 'react';
+import Animated, {
+  useAnimatedRef,
+  useSharedValue,
+  useAnimatedScrollHandler,
+  useAnimatedReaction,
+  scrollTo,
+  withTiming,
+  useAnimatedStyle,
+  interpolate,
+} from 'react-native-reanimated';
+import { View, Text, StyleSheet, Button } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export function Main() {
-  const [scrollY, setScrollY] = useState(0);
-  const [selectedItems, setSelectedItems] = useState<Set<number>>(new Set());
-  const contentRef = useRef<View>(null);
-  const contentTopOnScreen = useRef(0);
+  const leftRef = useAnimatedRef<Animated.ScrollView>();
+  const rightRef = useAnimatedRef<Animated.ScrollView>();
 
-  const measureContentTop = () => {
-    contentRef.current?.measureInWindow?.((_x, y) => {
-      contentTopOnScreen.current = y;
-    });
+  const y = useSharedValue(0);
+  const crop = useSharedValue(0);
+  const src = useSharedValue<0 | 1 | null>(null);
+  const isScrolling = useSharedValue(false);
+
+  const onScrollLeft = useAnimatedScrollHandler({
+    onBeginDrag: () => {
+      src.value = 0;
+      isScrolling.value = true;
+    },
+    onScroll: e => {
+      if (src.value === 0) {
+        y.value = e.contentOffset.y;
+      }
+    },
+    onEndDrag: () => {
+      isScrolling.value = false;
+    },
+    onMomentumEnd: () => {
+      isScrolling.value = false;
+      src.value = null;
+    },
+  });
+
+  const onScrollRight = useAnimatedScrollHandler({
+    onBeginDrag: () => {
+      src.value = 1;
+      isScrolling.value = true;
+    },
+    onScroll: e => {
+      if (src.value === 1) {
+        y.value = e.contentOffset.y;
+      }
+    },
+    onEndDrag: () => {
+      isScrolling.value = false;
+    },
+    onMomentumEnd: () => {
+      isScrolling.value = false;
+      src.value = null;
+    },
+  });
+
+  useAnimatedReaction(
+    () => ({ y: y.value, src: src.value }),
+    (current, previous) => {
+      if (current.y !== previous?.y && current.src !== null) {
+        if (current.src === 0) {
+          scrollTo(rightRef, 0, current.y, false);
+        } else if (current.src === 1) {
+          scrollTo(leftRef, 0, current.y, false);
+        }
+      }
+    },
+    [y, src],
+  );
+
+  const onPress = () => {
+    crop.value = withTiming(crop.value === 1 ? 0 : 1, { duration: 500 });
   };
 
-  useEffect(() => {
-    requestAnimationFrame(measureContentTop);
-  }, []);
+  const cropView = useAnimatedStyle(() => {
+    return {
+      width: interpolate(crop.value, [0, 1], [200, 0]),
+    };
+  });
 
-  const onScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
-    setScrollY(e.nativeEvent.contentOffset.y);
-  };
-
-  const addSelectedItem = (
-    e: GestureUpdateEvent<PanGestureHandlerEventPayload>,
-  ) => {
-    const yInContent =
-      e.absoluteY - contentTopOnScreen.current + scrollY - PADDING_VERTICAL * 4;
-
-    let index = Math.floor(yInContent / (ITEM_HEIGHT + ITEM_MARGIN));
-    if (index < 0) index = 0;
-    if (index >= N) index = N - 1;
-    setSelectedItems(prev => {
-      if (prev.has(index)) return prev;
-      const newSet = new Set(prev);
-      newSet.add(index);
-      return newSet;
-    });
-  };
-
-  //   const resetSelectedItems = () => {
-  //     setSelectedItems(new Set());
-  //   };
-
-  const pan = Gesture.Pan()
-    .onStart(e => {
-      scheduleOnRN(addSelectedItem, e);
-      console.log('start');
-    })
-    .onUpdate(e => {
-      scheduleOnRN(addSelectedItem, e);
-    })
-    .onEnd(() => {})
-    .activateAfterLongPress(300);
+  const content =
+    'asdadadasdasdadadasdasdadadasdasdadadasdasdadadasdasdadadasd\n'.repeat(
+      200,
+    );
 
   return (
-    <GestureDetector gesture={pan}>
-      <ScrollView
-        onScroll={onScroll}
-        scrollEventThrottle={16}
-        contentContainerStyle={{ paddingVertical: PADDING_VERTICAL }}
-      >
-        <View ref={contentRef} onLayout={measureContentTop}>
-          {Array.from({ length: N }, (_, i) => (
-            <View
-              key={i}
-              style={{
-                alignSelf: 'center',
-                width: 200,
-                height: ITEM_HEIGHT,
-                marginBottom: ITEM_MARGIN,
-                borderRadius: 12,
-                backgroundColor: selectedItems.has(i) ? '#4ade80' : '#2d2d2d',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
-            >
-              <Text style={{ color: '#fff' }}>Item {i}</Text>
-            </View>
-          ))}
-        </View>
-      </ScrollView>
-    </GestureDetector>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.header}>
+        <Text style={styles.headerText}>Synced ScrollView Demo</Text>
+      </View>
+
+      <View style={styles.scrollContainer}>
+        <Animated.ScrollView
+          ref={leftRef}
+          onScroll={onScrollLeft}
+          scrollEventThrottle={16}
+          showsVerticalScrollIndicator={true}
+          style={[styles.leftScroll, cropView]}
+          bounces={true}
+        >
+          <Text style={styles.content}>{content}</Text>
+        </Animated.ScrollView>
+
+        {/* <Animated.ScrollView
+          ref={rightRef}
+          onScroll={onScrollRight}
+          scrollEventThrottle={16}
+          showsVerticalScrollIndicator={true}
+          style={[styles.rightScroll]}
+          bounces={true}
+        >
+          <Text style={styles.content}>{content}</Text>
+        </Animated.ScrollView> */}
+      </View>
+      <Button title="ok" onPress={onPress} />
+    </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#f5f5f5',
+  },
+  header: {
+    padding: 16,
+    backgroundColor: '#fff',
+    borderBottomWidth: 1,
+    borderBottomColor: '#e0e0e0',
+  },
+  headerText: {
+    fontSize: 18,
+    fontWeight: '600',
+    textAlign: 'center',
+  },
+  scrollContainer: {
+    flex: 1,
+    flexDirection: 'row',
+  },
+  leftScroll: {
+    flex: 1,
+    backgroundColor: '#fff',
+    paddingHorizontal: 16,
+    zIndex: 4,
+  },
+  rightScroll: {
+    flex: 1,
+    backgroundColor: '#fafafa',
+    paddingHorizontal: 16,
+    position: 'absolute',
+  },
+  divider: {
+    width: 1,
+    backgroundColor: '#e0e0e0',
+  },
+  content: {
+    fontSize: 14,
+    lineHeight: 20,
+    color: '#333',
+  },
+});

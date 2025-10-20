@@ -1,16 +1,16 @@
-/* eslint-disable react-native/no-inline-styles */
-import React, { JSX, useCallback, useRef, useState } from 'react';
+import React, { JSX, useCallback, useRef } from 'react';
 import { View, ViewProps, StyleSheet } from 'react-native';
+import Animated, {
+  useSharedValue,
+  useAnimatedStyle,
+  withTiming,
+} from 'react-native-reanimated';
 import { useFocusEffect } from '@react-navigation/native';
 import { useFormContext } from 'react-hook-form';
-import { RootStackParamList } from '@navigation/type';
-import { scheduleOnRN } from 'react-native-worklets';
 
 export type AppSharedTransitionStartProps = ViewProps & {
   children: JSX.Element;
-  borderRadius?: number;
   style?: ViewProps['style'];
-  params?: RootStackParamList[keyof RootStackParamList];
 };
 
 export function AppSharedTransitionStart({
@@ -20,17 +20,18 @@ export function AppSharedTransitionStart({
 }: AppSharedTransitionStartProps) {
   const { setValue } = useFormContext();
   const ref = useRef<View>(null);
-  const [hidden, setHidden] = useState(false);
+  const opacity = useSharedValue(1);
 
   useFocusEffect(
     useCallback(() => {
-      requestAnimationFrame(() => {
-        scheduleOnRN(setHidden, false);
-      });
+      opacity.value = withTiming(1, { duration: 0 });
       return () => {
         ref.current?.measureInWindow((x, y, width, height) => {
           const flattenedStyle = StyleSheet.flatten(children.props?.style);
-          const extractedBorderRadius = flattenedStyle?.borderRadius ?? 0;
+          const extractedBorderRadius =
+            typeof flattenedStyle?.borderRadius === 'number'
+              ? flattenedStyle.borderRadius
+              : 0;
 
           setValue('pageX', x);
           setValue('pageY', y);
@@ -38,28 +39,32 @@ export function AppSharedTransitionStart({
           setValue('height', height);
           setValue('borderRadius', extractedBorderRadius);
           requestAnimationFrame(() => {
-            scheduleOnRN(setHidden, true);
+            opacity.value = 0;
           });
         });
       };
-    }, [children.props?.style, setValue]),
+    }, [children.props?.style, setValue, opacity]),
   );
 
+  const animatedStyle = useAnimatedStyle(() => ({
+    opacity: opacity.value,
+  }));
+
   return (
-    <View
+    <Animated.View
       {...viewProps}
       ref={ref}
-      style={[
-        {
-          opacity: hidden ? 0 : 1,
-          alignSelf: 'flex-start',
-          overflow: 'hidden',
-        },
-        style,
-      ]}
+      style={[styles.container, style, animatedStyle]}
       collapsable={false}
     >
       {children}
-    </View>
+    </Animated.View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    alignSelf: 'flex-start',
+    overflow: 'hidden',
+  },
+});
