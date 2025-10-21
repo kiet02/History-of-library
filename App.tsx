@@ -7,9 +7,9 @@ import { ListScreen } from '@screen/ListScreen';
 import { DetailScreen } from '@screen/DetailScreen';
 import { Main } from '@screen/Main';
 import { SafeAreaView } from 'react-native-safe-area-context';
-
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 const Stack = createNativeStackNavigator();
-
+const queryClient = new QueryClient();
 export default function App() {
   const methods = useForm({
     defaultValues: {
@@ -22,19 +22,21 @@ export default function App() {
   });
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <FormProvider {...methods}>
-        <NavigationContainer>
-          <Stack.Navigator
-            initialRouteName="Main"
-            screenOptions={{ headerShown: false }}
-          >
-            <Stack.Screen name="ListScreen" component={ListScreen} />
-            <Stack.Screen name="Detail" component={DetailScreen} />
-            <Stack.Screen name="Main" component={Main} />
-          </Stack.Navigator>
-        </NavigationContainer>
-      </FormProvider>
-    </SafeAreaView>
+    <QueryClientProvider client={queryClient}>
+      <SafeAreaView style={{ flex: 1 }}>
+        <FormProvider {...methods}>
+          <NavigationContainer>
+            <Stack.Navigator
+              initialRouteName="Main"
+              screenOptions={{ headerShown: false }}
+            >
+              <Stack.Screen name="ListScreen" component={ListScreen} />
+              <Stack.Screen name="Detail" component={DetailScreen} />
+              <Stack.Screen name="Main" component={Main} />
+            </Stack.Navigator>
+          </NavigationContainer>
+        </FormProvider>
+      </SafeAreaView>
+    </QueryClientProvider>
   );
 }

@@ -1,41 +1,59 @@
-import React from 'react';
+import React, { useCallback } from 'react';
+import { View, Text, StyleSheet, Button } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import Animated, {
   useAnimatedRef,
   useSharedValue,
   useAnimatedScrollHandler,
   useAnimatedReaction,
-  scrollTo,
-  withTiming,
   useAnimatedStyle,
+  scrollTo,
   interpolate,
+  withTiming,
+  runOnJS,
 } from 'react-native-reanimated';
-import { View, Text, StyleSheet, Button } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { focusManager, useIsFetching, useQuery } from '@tanstack/react-query';
+import { fetchPosts, HpBook } from '@utils/fetch/FetchApi';
+import { useFocusEffect, useNavigation } from '@react-navigation/native';
+import { TStack } from '@navigation/type';
 
 export function Main() {
   const leftRef = useAnimatedRef<Animated.ScrollView>();
   const rightRef = useAnimatedRef<Animated.ScrollView>();
 
+  const show = useSharedValue(1);
   const y = useSharedValue(0);
-  const crop = useSharedValue(0);
-  const src = useSharedValue<0 | 1 | null>(null);
-  const isScrolling = useSharedValue(false);
+  const src = useSharedValue<null | 0 | 1>(null);
+  const navi = useNavigation<TStack>();
+
+  const { data } = useQuery({
+    queryKey: ['posts'],
+    queryFn: fetchPosts,
+    staleTime: 1000,
+    refetchOnMount: false,
+    refetchInterval: 1000,
+  });
+
+  const isFetching = useIsFetching({ queryKey: ['posts'] });
+  if (isFetching) console.log(isFetching, 'isRefetching');
+
+  useFocusEffect(
+    useCallback(() => {
+      focusManager.setFocused(true);
+      return () => {
+        focusManager.setFocused(false);
+      };
+    }, []),
+  );
 
   const onScrollLeft = useAnimatedScrollHandler({
     onBeginDrag: () => {
       src.value = 0;
-      isScrolling.value = true;
     },
     onScroll: e => {
-      if (src.value === 0) {
-        y.value = e.contentOffset.y;
-      }
-    },
-    onEndDrag: () => {
-      isScrolling.value = false;
+      if (src.value === 0) y.value = e.contentOffset.y;
     },
     onMomentumEnd: () => {
-      isScrolling.value = false;
       src.value = null;
     },
   });
@@ -43,126 +61,138 @@ export function Main() {
   const onScrollRight = useAnimatedScrollHandler({
     onBeginDrag: () => {
       src.value = 1;
-      isScrolling.value = true;
     },
     onScroll: e => {
-      if (src.value === 1) {
-        y.value = e.contentOffset.y;
-      }
-    },
-    onEndDrag: () => {
-      isScrolling.value = false;
+      if (src.value === 1) y.value = e.contentOffset.y;
     },
     onMomentumEnd: () => {
-      isScrolling.value = false;
       src.value = null;
     },
   });
 
   useAnimatedReaction(
     () => ({ y: y.value, src: src.value }),
-    (current, previous) => {
-      if (current.y !== previous?.y && current.src !== null) {
-        if (current.src === 0) {
-          scrollTo(rightRef, 0, current.y, false);
-        } else if (current.src === 1) {
-          scrollTo(leftRef, 0, current.y, false);
-        }
+    (cur, prev) => {
+      if (cur.src === null) return;
+      if (prev && cur.y === prev.y) return;
+
+      if (cur.src === 0) {
+        scrollTo(rightRef, 0, cur.y, false);
+      } else {
+        scrollTo(leftRef, 0, cur.y, false);
       }
     },
     [y, src],
   );
 
-  const onPress = () => {
-    crop.value = withTiming(crop.value === 1 ? 0 : 1, { duration: 500 });
-  };
+  const overlayWidth = 440;
 
-  const cropView = useAnimatedStyle(() => {
+  const overlayStyle = useAnimatedStyle(() => {
     return {
       position: 'absolute',
-      width: interpolate(crop.value, [0, 1], [200, 0]),
-      zIndex: 10,
-      backgroundColor: 'white',
+      top: 0,
+      left: 0,
+      bottom: 0,
+      width: interpolate(show.value, [0, 1], [overlayWidth, 0]),
+      overflow: 'hidden',
     };
   });
 
-  const content =
-    'asdadadasdasdadadasdasdadadasdasdadadasdasdadadasdasdadadasd\n'.repeat(
-      200,
+  const onToggleOverlay = () => {
+    show.value = withTiming(
+      show.value === 1 ? 0 : 1,
+      { duration: 350 },
+      () => {},
     );
+    runOnJS(() => navi.navigate('ListScreen'))();
+  };
 
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerText}>Synced ScrollView Demo</Text>
+        <Text style={styles.headerText}>Overlayed Synced ScrollViews</Text>
       </View>
 
-      <View style={styles.scrollContainer}>
-        <Animated.ScrollView
-          ref={leftRef}
-          onScroll={onScrollLeft}
-          scrollEventThrottle={16}
-          showsVerticalScrollIndicator={true}
-          style={cropView}
-          bounces={true}
-        >
-          <Text style={styles.content}>{content}</Text>
-        </Animated.ScrollView>
-
+      <View style={styles.stage}>
         <Animated.ScrollView
           ref={rightRef}
           onScroll={onScrollRight}
           scrollEventThrottle={16}
-          showsVerticalScrollIndicator={true}
-          style={[styles.rightScroll]}
-          bounces={true}
+          showsVerticalScrollIndicator
+          style={styles.rightScroll}
+          contentContainerStyle={styles.contentWrap}
         >
-          <Text style={styles.content}>{content}</Text>
+          {data?.map((e: HpBook) => (
+            <Text key={e.index} style={styles.contentText}>
+              [RIGHT]{'\n'}
+              {e.title}
+              {'\n'}
+              {'\n'}
+              {e.description}
+            </Text>
+          ))}
         </Animated.ScrollView>
+
+        <Animated.View style={[styles.overlayWrapper, overlayStyle]}>
+          <Animated.ScrollView
+            ref={leftRef}
+            onScroll={onScrollLeft}
+            scrollEventThrottle={16}
+            showsVerticalScrollIndicator
+            style={styles.leftScroll}
+            contentContainerStyle={styles.contentWrap}
+          >
+            {data?.map((e: HpBook) => (
+              <Text key={e.index} style={styles.contentText}>
+                [LEFT]{'\n'}
+                {e.title}
+                {'\n'}
+                {'\n'}
+                {e.description}
+              </Text>
+            ))}
+          </Animated.ScrollView>
+        </Animated.View>
       </View>
-      <Button title="ok" onPress={onPress} />
+
+      <View style={styles.footer}>
+        <Button title="Toggle Overlay" onPress={onToggleOverlay} />
+      </View>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#f5f5f5',
-  },
+  container: { flex: 1, backgroundColor: '#F6F7F9' },
   header: {
-    padding: 16,
+    padding: 12,
     backgroundColor: '#fff',
-    borderBottomWidth: 1,
-    borderBottomColor: '#e0e0e0',
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: '#E3E4E8',
   },
-  headerText: {
-    fontSize: 18,
-    fontWeight: '600',
-    textAlign: 'center',
+  headerText: { textAlign: 'center', fontSize: 16, fontWeight: '600' },
+
+  stage: { flex: 1, position: 'relative' },
+
+  rightScroll: { width: 415, backgroundColor: '#FAFAFA' },
+  leftScroll: { width: 415, backgroundColor: 'gray' },
+
+  overlayWrapper: {
+    borderRightWidth: StyleSheet.hairlineWidth,
+    borderRightColor: '#DADDE3',
+    shadowColor: '#000',
+    shadowOpacity: 0.05,
+    shadowRadius: 4,
+    elevation: 2,
   },
-  scrollContainer: {
-    flex: 1,
-    flexDirection: 'row',
-  },
-  leftScroll: {
-    flex: 1,
+
+  contentWrap: { paddingHorizontal: 16, paddingVertical: 10 },
+  contentText: { fontSize: 14, lineHeight: 20, color: '#333' },
+
+  footer: {
+    padding: 12,
     backgroundColor: '#fff',
-    paddingHorizontal: 16,
-    zIndex: 4,
-  },
-  rightScroll: {
-    flex: 1,
-    backgroundColor: '#fafafa',
-    paddingHorizontal: 16,
-  },
-  divider: {
-    width: 1,
-    backgroundColor: '#e0e0e0',
-  },
-  content: {
-    fontSize: 14,
-    lineHeight: 20,
-    color: '#333',
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderTopColor: '#E3E4E8',
   },
 });
