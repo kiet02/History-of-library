@@ -1,0 +1,1727 @@
+Initialized native services in: /Users/mn20/.gradle/native
+Initialized jansi services in: /Users/mn20/.gradle/native
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.0.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Starting process 'Gradle build daemon'. Working directory: /Users/mn20/.gradle/daemon/9.0.0 Command: /Users/mn20/.sdkman/candidates/java/17.0.9-zulu/zulu-17.jdk/Contents/Home/bin/java --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED -XX:MaxMetaspaceSize=512m -Xmx2048m -Dfile.encoding=UTF-8 -Duser.country=VN -Duser.language=vi -Duser.variant -cp /Users/mn20/.gradle/wrapper/dists/gradle-9.0.0-bin/d6wjpkvcgsg3oed0qlfss3wgl/gradle-9.0.0/lib/gradle-daemon-main-9.0.0.jar -javaagent:/Users/mn20/.gradle/wrapper/dists/gradle-9.0.0-bin/d6wjpkvcgsg3oed0qlfss3wgl/gradle-9.0.0/lib/agents/gradle-instrumentation-agent-9.0.0.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 9.0.0
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 0.589 secs.
+The client will now receive all logging from the daemon (pid: 27783). The daemon log file: /Users/mn20/.gradle/daemon/9.0.0/daemon-27783.out.log
+Daemon will be stopped at the end of the build 
+Using 8 worker leases.
+Received JVM installation metadata from '/Users/mn20/.sdkman/candidates/java/17.0.9-zulu/zulu-17.jdk/Contents/Home': {JAVA_HOME=/Users/mn20/.sdkman/candidates/java/17.0.9-zulu/zulu-17.jdk/Contents/Home, JAVA_VERSION=17.0.9, JAVA_VENDOR=Azul Systems, Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.9+8-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.9+8-LTS, VM_VENDOR=Azul Systems, Inc., OS_ARCH=aarch64}
+Watching the file system is configured to be enabled if available
+Now considering [/Users/mn20/Projects/HistoryOfLibrary/android] as hierarchies to watch
+File system watching is active
+Starting Build
+Now considering [/Users/mn20/Projects/HistoryOfLibrary/node_modules/@react-native/gradle-plugin, /Users/mn20/Projects/HistoryOfLibrary/android] as hierarchies to watch
+Resolved plugin [id: 'org.gradle.toolchains.foojay-resolver-convention', version: '0.5.0']
+
+> Configure project :gradle-plugin
+Evaluating project ':gradle-plugin' using build file '/Users/mn20/Projects/HistoryOfLibrary/node_modules/@react-native/gradle-plugin/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.1.20', apply: false]
+Resolved plugin [id: 'com.ncorti.ktfmt.gradle', version: '0.22.0']
+
+> Configure project :gradle-plugin:react-native-gradle-plugin
+Evaluating project ':gradle-plugin:react-native-gradle-plugin' using build file '/Users/mn20/Projects/HistoryOfLibrary/node_modules/@react-native/gradle-plugin/react-native-gradle-plugin/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.1.20']
+Resolved plugin [id: 'com.ncorti.ktfmt.gradle', version: '0.22.0']
+Resolved plugin [id: 'java-gradle-plugin']
+Build b3ce9412-70af-490e-820a-1ab7c0825170 is started
+Using Kotlin Gradle Plugin gradle85 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :gradle-plugin:settings-plugin
+Evaluating project ':gradle-plugin:settings-plugin' using build file '/Users/mn20/Projects/HistoryOfLibrary/node_modules/@react-native/gradle-plugin/settings-plugin/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.1.20']
+Resolved plugin [id: 'com.ncorti.ktfmt.gradle', version: '0.22.0']
+Resolved plugin [id: 'java-gradle-plugin']
+Using Kotlin Gradle Plugin gradle85 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :gradle-plugin:shared
+Evaluating project ':gradle-plugin:shared' using build file '/Users/mn20/Projects/HistoryOfLibrary/node_modules/@react-native/gradle-plugin/shared/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.1.20']
+Resolved plugin [id: 'com.ncorti.ktfmt.gradle', version: '0.22.0']
+Using Kotlin Gradle Plugin gradle85 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :gradle-plugin:shared-testutil
+Evaluating project ':gradle-plugin:shared-testutil' using build file '/Users/mn20/Projects/HistoryOfLibrary/node_modules/@react-native/gradle-plugin/shared-testutil/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.1.20']
+Resolved plugin [id: 'com.ncorti.ktfmt.gradle', version: '0.22.0']
+Using Kotlin Gradle Plugin gradle85 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+Resolved plugin [id: 'com.facebook.react.settings']
+Starting process 'command '/usr/libexec/java_home''. Working directory: /Users/mn20/.gradle/daemon/9.0.0 Command: /usr/libexec/java_home -V
+Successfully started process 'command '/usr/libexec/java_home''
+Starting process 'command '/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/bin/java''. Working directory: /Users/mn20/.gradle/.tmp/tmp-jvm3248895250786763200probe Command: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/bin/java''
+Received JVM installation metadata from '/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home': {JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home, JAVA_VERSION=17.0.15, JAVA_VENDOR=Azul Systems, Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.15+6-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.15+6-LTS, VM_VENDOR=Azul Systems, Inc., OS_ARCH=aarch64}
+Starting process 'command '/Users/mn20/.sdkman/candidates/java/11.0.26-zulu/bin/java''. Working directory: /Users/mn20/.gradle/.tmp/tmp-jvm8580486655482758327probe Command: /Users/mn20/.sdkman/candidates/java/11.0.26-zulu/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Users/mn20/.sdkman/candidates/java/11.0.26-zulu/bin/java''
+Received JVM installation metadata from '/Users/mn20/.sdkman/candidates/java/11.0.26-zulu': {JAVA_HOME=/Users/mn20/.sdkman/candidates/java/11.0.26-zulu/zulu-11.jdk/Contents/Home, JAVA_VERSION=11.0.26, JAVA_VENDOR=Azul Systems, Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.26+4-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.26+4-LTS, VM_VENDOR=Azul Systems, Inc., OS_ARCH=aarch64}
+Starting process 'command '/Users/mn20/.sdkman/candidates/java/17.0.9-zulu/bin/java''. Working directory: /Users/mn20/.gradle/.tmp/tmp-jvm8880310931483982267probe Command: /Users/mn20/.sdkman/candidates/java/17.0.9-zulu/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Users/mn20/.sdkman/candidates/java/17.0.9-zulu/bin/java''
+Received JVM installation metadata from '/Users/mn20/.sdkman/candidates/java/17.0.9-zulu': {JAVA_HOME=/Users/mn20/.sdkman/candidates/java/17.0.9-zulu/zulu-17.jdk/Contents/Home, JAVA_VERSION=17.0.9, JAVA_VENDOR=Azul Systems, Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.9+8-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.9+8-LTS, VM_VENDOR=Azul Systems, Inc., OS_ARCH=aarch64}
+Resolve mutations for :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker,5,main]) started.
+:gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker,5,main]) started.
+
+> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker,5,main]) started.
+:gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker,5,main]) started.
+
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :gradle-plugin:shared:compileKotlin (Thread[Execution worker,5,main]) started.
+:gradle-plugin:shared:compileKotlin (Thread[included builds,5,main]) started.
+
+> Task :gradle-plugin:shared:compileKotlin UP-TO-DATE
+Caching disabled for task ':gradle-plugin:shared:compileKotlin' because:
+  Build cache is disabled
+Skipping task ':gradle-plugin:shared:compileKotlin' as it is up-to-date.
+Resolve mutations for :gradle-plugin:shared:compileJava (Thread[included builds,5,main]) started.
+:gradle-plugin:shared:compileJava (Thread[included builds,5,main]) started.
+
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+Skipping task ':gradle-plugin:shared:compileJava' as it has no source files and no previous output files.
+Resolve mutations for :gradle-plugin:shared:processResources (Thread[included builds,5,main]) started.
+:gradle-plugin:shared:processResources (Thread[included builds,5,main]) started.
+
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+Skipping task ':gradle-plugin:shared:processResources' as it has no source files and no previous output files.
+Resolve mutations for :gradle-plugin:shared:classes (Thread[included builds,5,main]) started.
+:gradle-plugin:shared:classes (Thread[included builds,5,main]) started.
+
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+Skipping task ':gradle-plugin:shared:classes' as it has no actions.
+Resolve mutations for :gradle-plugin:shared:jar (Thread[included builds,5,main]) started.
+:gradle-plugin:shared:jar (Thread[included builds,5,main]) started.
+
+> Task :gradle-plugin:shared:jar UP-TO-DATE
+Caching disabled for task ':gradle-plugin:shared:jar' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle-plugin:shared:jar' as it is up-to-date.
+work action resolve shared.jar (project :gradle-plugin:shared) (Thread[included builds,5,main]) started.
+Resolve mutations for :gradle-plugin:settings-plugin:compileKotlin (Thread[included builds,5,main]) started.
+:gradle-plugin:settings-plugin:compileKotlin (Thread[included builds,5,main]) started.
+
+> Task :gradle-plugin:settings-plugin:compileKotlin UP-TO-DATE
+Caching disabled for task ':gradle-plugin:settings-plugin:compileKotlin' because:
+  Build cache is disabled
+Skipping task ':gradle-plugin:settings-plugin:compileKotlin' as it is up-to-date.
+Resolve mutations for :gradle-plugin:settings-plugin:compileJava (Thread[included builds,5,main]) started.
+:gradle-plugin:settings-plugin:compileJava (Thread[included builds,5,main]) started.
+
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+Skipping task ':gradle-plugin:settings-plugin:compileJava' as it has no source files and no previous output files.
+Resolve mutations for :gradle-plugin:settings-plugin:pluginDescriptors (Thread[included builds,5,main]) started.
+:gradle-plugin:settings-plugin:pluginDescriptors (Thread[included builds,5,main]) started.
+
+> Task :gradle-plugin:settings-plugin:pluginDescriptors UP-TO-DATE
+Caching disabled for task ':gradle-plugin:settings-plugin:pluginDescriptors' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle-plugin:settings-plugin:pluginDescriptors' as it is up-to-date.
+Resolve mutations for :gradle-plugin:settings-plugin:processResources (Thread[included builds,5,main]) started.
+:gradle-plugin:settings-plugin:processResources (Thread[included builds,5,main]) started.
+
+> Task :gradle-plugin:settings-plugin:processResources UP-TO-DATE
+Caching disabled for task ':gradle-plugin:settings-plugin:processResources' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle-plugin:settings-plugin:processResources' as it is up-to-date.
+Resolve mutations for :gradle-plugin:settings-plugin:classes (Thread[included builds,5,main]) started.
+:gradle-plugin:settings-plugin:classes (Thread[included builds,5,main]) started.
+
+> Task :gradle-plugin:settings-plugin:classes UP-TO-DATE
+Skipping task ':gradle-plugin:settings-plugin:classes' as it has no actions.
+Resolve mutations for :gradle-plugin:settings-plugin:jar (Thread[included builds,5,main]) started.
+:gradle-plugin:settings-plugin:jar (Thread[included builds,5,main]) started.
+
+> Task :gradle-plugin:settings-plugin:jar UP-TO-DATE
+Caching disabled for task ':gradle-plugin:settings-plugin:jar' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle-plugin:settings-plugin:jar' as it is up-to-date.
+Settings evaluated using settings file '/Users/mn20/Projects/HistoryOfLibrary/android/settings.gradle'.
+Projects loaded. Root project using build file '/Users/mn20/Projects/HistoryOfLibrary/android/build.gradle'.
+Included projects: [root project 'HistoryOfLibrary', project ':app', project ':react-native-gesture-handler', project ':react-native-mmkv', project ':react-native-reanimated', project ':react-native-safe-area-context', project ':react-native-screens', project ':react-native-worklets']
+Registering project ':gradle-plugin' in composite build. Will substitute for module ':gradle-plugin-root'.
+Registering project ':gradle-plugin:react-native-gradle-plugin' in composite build. Will substitute for module 'com.facebook.react:react-native-gradle-plugin'.
+Registering project ':gradle-plugin:settings-plugin' in composite build. Will substitute for module 'com.facebook.react:settings-plugin'.
+Registering project ':gradle-plugin:shared' in composite build. Will substitute for module 'com.facebook.react:shared'.
+Registering project ':gradle-plugin:shared-testutil' in composite build. Will substitute for module 'com.facebook.react:shared-testutil'.
+
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin UP-TO-DATE
+Caching disabled for task ':gradle-plugin:react-native-gradle-plugin:compileKotlin' because:
+  Build cache is disabled
+Skipping task ':gradle-plugin:react-native-gradle-plugin:compileKotlin' as it is up-to-date.
+
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+Skipping task ':gradle-plugin:react-native-gradle-plugin:compileJava' as it has no source files and no previous output files.
+
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+Caching disabled for task ':gradle-plugin:react-native-gradle-plugin:pluginDescriptors' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle-plugin:react-native-gradle-plugin:pluginDescriptors' as it is up-to-date.
+
+> Task :gradle-plugin:react-native-gradle-plugin:processResources UP-TO-DATE
+Caching disabled for task ':gradle-plugin:react-native-gradle-plugin:processResources' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle-plugin:react-native-gradle-plugin:processResources' as it is up-to-date.
+
+> Task :gradle-plugin:react-native-gradle-plugin:classes UP-TO-DATE
+Skipping task ':gradle-plugin:react-native-gradle-plugin:classes' as it has no actions.
+
+> Task :gradle-plugin:react-native-gradle-plugin:jar UP-TO-DATE
+Caching disabled for task ':gradle-plugin:react-native-gradle-plugin:jar' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle-plugin:react-native-gradle-plugin:jar' as it is up-to-date.
+
+> Configure project :
+Evaluating root project 'HistoryOfLibrary' using build file '/Users/mn20/Projects/HistoryOfLibrary/android/build.gradle'.
+Found project 'project :gradle-plugin:react-native-gradle-plugin' as substitute for module 'com.facebook.react:react-native-gradle-plugin'.
+Ignoring listeners of task graph ready event, as this build (:gradle-plugin) has already executed work.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors (Thread[included builds,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors (Thread[included builds,5,main]) started.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:compileKotlin (Thread[included builds,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:compileKotlin (Thread[included builds,5,main]) started.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:compileJava (Thread[included builds,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:compileJava (Thread[included builds,5,main]) started.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:pluginDescriptors (Thread[included builds,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:pluginDescriptors (Thread[included builds,5,main]) started.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:processResources (Thread[included builds,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:processResources (Thread[included builds,5,main]) started.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:classes (Thread[included builds,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:classes (Thread[included builds,5,main]) started.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:jar (Thread[included builds,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:jar (Thread[included builds,5,main]) started.
+
+> Configure project :app
+Evaluating project ':app' using build file '/Users/mn20/Projects/HistoryOfLibrary/android/app/build.gradle'.
+Using default execution profile
+Build 9f83c0a5-0719-4470-bfdd-5e68d33af20b is started
+Using Kotlin Gradle Plugin gradle85 variant
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+
+> Configure project :react-native-gesture-handler
+Evaluating project ':react-native-gesture-handler' using build file '/Users/mn20/Projects/HistoryOfLibrary/node_modules/react-native-gesture-handler/android/build.gradle'.
+Using default execution profile
+Using Kotlin Gradle Plugin gradle85 variant
+Starting process 'command 'node''. Working directory: /Users/mn20/Projects/HistoryOfLibrary/android Command: node --print require.resolve('react-native/package.json')
+Successfully started process 'command 'node''
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+
+> Configure project :react-native-mmkv
+Evaluating project ':react-native-mmkv' using build file '/Users/mn20/Projects/HistoryOfLibrary/node_modules/react-native-mmkv/android/build.gradle'.
+Using default execution profile
+[react-native-mmkv] Thank you for using react-native-mmkv ❤️
+[react-native-mmkv] If you enjoy using react-native-mmkv, please consider sponsoring this project: https://github.com/sponsors/mrousavy
+
+> Configure project :react-native-worklets
+Evaluating project ':react-native-worklets' using build file '/Users/mn20/Projects/HistoryOfLibrary/node_modules/react-native-worklets/android/build.gradle'.
+Starting process 'command 'node''. Working directory: /Users/mn20/Projects/HistoryOfLibrary/android Command: node --print require.resolve('react-native/package.json')
+Successfully started process 'command 'node''
+Starting process 'command 'node''. Working directory: /Users/mn20/Projects/HistoryOfLibrary/android Command: node --print require.resolve('react-native/package.json')
+Successfully started process 'command 'node''
+Starting process 'command 'node''. Working directory: /Users/mn20/Projects/HistoryOfLibrary/android Command: node --print require.resolve('react-native/package.json')
+Successfully started process 'command 'node''
+Using default execution profile
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+
+> Configure project :react-native-reanimated
+Evaluating project ':react-native-reanimated' using build file '/Users/mn20/Projects/HistoryOfLibrary/node_modules/react-native-reanimated/android/build.gradle'.
+Starting process 'command 'node''. Working directory: /Users/mn20/Projects/HistoryOfLibrary/android Command: node --print require.resolve('react-native/package.json')
+Successfully started process 'command 'node''
+Starting process 'command 'node''. Working directory: /Users/mn20/Projects/HistoryOfLibrary/android Command: node --print require.resolve('react-native-worklets/package.json')
+Successfully started process 'command 'node''
+Starting process 'command 'node''. Working directory: /Users/mn20/Projects/HistoryOfLibrary/android Command: node --print require.resolve('react-native/package.json')
+Successfully started process 'command 'node''
+Starting process 'command 'node''. Working directory: /Users/mn20/Projects/HistoryOfLibrary/android Command: node --print require.resolve('react-native/package.json')
+Successfully started process 'command 'node''
+Using default execution profile
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+
+> Configure project :react-native-safe-area-context
+Evaluating project ':react-native-safe-area-context' using build file '/Users/mn20/Projects/HistoryOfLibrary/node_modules/react-native-safe-area-context/android/build.gradle'.
+Using default execution profile
+Using Kotlin Gradle Plugin gradle85 variant
+
+> Configure project :react-native-screens
+Evaluating project ':react-native-screens' using build file '/Users/mn20/Projects/HistoryOfLibrary/node_modules/react-native-screens/android/build.gradle'.
+Using default execution profile
+Using Kotlin Gradle Plugin gradle85 variant
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [27.1.12297006]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/mn20/Library/Android/sdk
+All projects evaluated.
+Task path ':app:compileDebugKotlin' matched project ':app'
+Task name matched 'compileDebugKotlin'
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugKotlin
+Selected primary task 'compileDebugKotlin' from project :app
+Starting process 'command '/usr/libexec/java_home''. Working directory: /Users/mn20/.gradle/daemon/9.0.0 Command: /usr/libexec/java_home -V
+Successfully started process 'command '/usr/libexec/java_home''
+Tasks to be executed: [task ':app:checkKotlinGradlePluginConfigurationErrors', task ':app:generateAutolinkingNewArchitectureFiles', task ':app:generateAutolinkingPackageList', task ':app:generateCodegenSchemaFromJavaScript', task ':app:generateCodegenArtifactsFromSchema', task ':app:generateReactNativeEntryPoint', task ':react-native-gesture-handler:generateCodegenSchemaFromJavaScript', task ':react-native-gesture-handler:generateCodegenArtifactsFromSchema', task ':react-native-gesture-handler:preBuild', task ':react-native-mmkv:generateCodegenSchemaFromJavaScript', task ':react-native-mmkv:generateCodegenArtifactsFromSchema', task ':react-native-mmkv:preBuild', task ':react-native-reanimated:assertMinimalReactNativeVersionTask', task ':react-native-reanimated:assertNewArchitectureEnabledTask', task ':react-native-reanimated:assertWorkletsVersionTask', task ':react-native-reanimated:generateCodegenSchemaFromJavaScript', task ':react-native-reanimated:generateCodegenArtifactsFromSchema', task ':react-native-reanimated:prepareReanimatedHeadersForPrefabs', task ':react-native-reanimated:preBuild', task ':react-native-safe-area-context:generateCodegenSchemaFromJavaScript', task ':react-native-safe-area-context:generateCodegenArtifactsFromSchema', task ':react-native-safe-area-context:preBuild', task ':react-native-screens:generateCodegenSchemaFromJavaScript', task ':react-native-screens:generateCodegenArtifactsFromSchema', task ':react-native-screens:preBuild', task ':react-native-worklets:assertMinimalReactNativeVersionTask', task ':react-native-worklets:assertNewArchitectureEnabledTask', task ':react-native-worklets:generateCodegenSchemaFromJavaScript', task ':react-native-worklets:generateCodegenArtifactsFromSchema', task ':react-native-worklets:prepareWorkletsHeadersForPrefabs', task ':react-native-worklets:preBuild', task ':app:preBuild', task ':app:preDebugBuild', task ':app:generateDebugBuildConfig', task ':react-native-gesture-handler:preDebugBuild', task ':react-native-gesture-handler:writeDebugAarMetadata', task ':react-native-mmkv:preDebugBuild', task ':react-native-mmkv:writeDebugAarMetadata', task ':react-native-reanimated:preDebugBuild', task ':react-native-reanimated:writeDebugAarMetadata', task ':react-native-safe-area-context:preDebugBuild', task ':react-native-safe-area-context:writeDebugAarMetadata', task ':react-native-screens:preDebugBuild', task ':react-native-screens:writeDebugAarMetadata', task ':react-native-worklets:preDebugBuild', task ':react-native-worklets:writeDebugAarMetadata', task ':app:checkDebugAarMetadata', task ':app:generateDebugResValues', task ':react-native-gesture-handler:generateDebugResValues', task ':react-native-gesture-handler:generateDebugResources', task ':react-native-gesture-handler:packageDebugResources', task ':react-native-mmkv:generateDebugResValues', task ':react-native-mmkv:generateDebugResources', task ':react-native-mmkv:packageDebugResources', task ':react-native-reanimated:generateDebugResValues', task ':react-native-reanimated:generateDebugResources', task ':react-native-reanimated:packageDebugResources', task ':react-native-safe-area-context:generateDebugResValues', task ':react-native-safe-area-context:generateDebugResources', task ':react-native-safe-area-context:packageDebugResources', task ':react-native-screens:generateDebugResValues', task ':react-native-screens:generateDebugResources', task ':react-native-screens:packageDebugResources', task ':react-native-worklets:generateDebugResValues', task ':react-native-worklets:generateDebugResources', task ':react-native-worklets:packageDebugResources', task ':app:mapDebugSourceSetPaths', task ':app:generateDebugResources', task ':app:mergeDebugResources', task ':app:packageDebugResources', task ':app:parseDebugLocalResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':react-native-gesture-handler:extractDeepLinksDebug', task ':react-native-gesture-handler:processDebugManifest', task ':react-native-mmkv:extractDeepLinksDebug', task ':react-native-mmkv:processDebugManifest', task ':react-native-reanimated:extractDeepLinksDebug', task ':react-native-reanimated:processDebugManifest', task ':react-native-safe-area-context:extractDeepLinksDebug', task ':react-native-safe-area-context:processDebugManifest', task ':react-native-screens:extractDeepLinksDebug', task ':react-native-screens:processDebugManifest', task ':react-native-worklets:extractDeepLinksDebug', task ':react-native-worklets:processDebugManifest', task ':app:processDebugMainManifest', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':react-native-gesture-handler:compileDebugLibraryResources', task ':react-native-gesture-handler:parseDebugLocalResources', task ':react-native-gesture-handler:generateDebugRFile', task ':react-native-mmkv:compileDebugLibraryResources', task ':react-native-mmkv:parseDebugLocalResources', task ':react-native-mmkv:generateDebugRFile', task ':react-native-reanimated:compileDebugLibraryResources', task ':react-native-reanimated:parseDebugLocalResources', task ':react-native-reanimated:generateDebugRFile', task ':react-native-safe-area-context:compileDebugLibraryResources', task ':react-native-safe-area-context:parseDebugLocalResources', task ':react-native-safe-area-context:generateDebugRFile', task ':react-native-screens:compileDebugLibraryResources', task ':react-native-screens:parseDebugLocalResources', task ':react-native-screens:generateDebugRFile', task ':react-native-worklets:compileDebugLibraryResources', task ':react-native-worklets:parseDebugLocalResources', task ':react-native-worklets:generateDebugRFile', task ':app:processDebugResources', task ':react-native-gesture-handler:checkKotlinGradlePluginConfigurationErrors', task ':react-native-gesture-handler:generateDebugBuildConfig', task ':react-native-reanimated:generateDebugBuildConfig', task ':react-native-reanimated:javaPreCompileDebug', task ':react-native-worklets:generateDebugBuildConfig', task ':react-native-worklets:javaPreCompileDebug', task ':react-native-worklets:compileDebugJavaWithJavac', task ':react-native-worklets:bundleLibCompileToJarDebug', task ':react-native-reanimated:compileDebugJavaWithJavac', task ':react-native-reanimated:bundleLibCompileToJarDebug', task ':react-native-gesture-handler:compileDebugKotlin', task ':react-native-gesture-handler:javaPreCompileDebug', task ':react-native-gesture-handler:compileDebugJavaWithJavac', task ':react-native-gesture-handler:bundleLibCompileToJarDebug', task ':react-native-mmkv:generateDebugBuildConfig', task ':react-native-mmkv:javaPreCompileDebug', task ':react-native-mmkv:compileDebugJavaWithJavac', task ':react-native-mmkv:bundleLibCompileToJarDebug', task ':react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors', task ':react-native-safe-area-context:generateDebugBuildConfig', task ':react-native-safe-area-context:compileDebugKotlin', task ':react-native-safe-area-context:javaPreCompileDebug', task ':react-native-safe-area-context:compileDebugJavaWithJavac', task ':react-native-safe-area-context:bundleLibCompileToJarDebug', task ':react-native-screens:checkKotlinGradlePluginConfigurationErrors', task ':react-native-screens:generateDebugBuildConfig', task ':react-native-screens:compileDebugKotlin', task ':react-native-screens:javaPreCompileDebug', task ':react-native-screens:compileDebugJavaWithJavac', task ':react-native-screens:bundleLibCompileToJarDebug', task ':app:compileDebugKotlin']
+Tasks that were excluded: []
+Resolve mutations for :app:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 5,5,main]) started.
+:app:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':app:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :app:generateAutolinkingNewArchitectureFiles (Thread[Execution worker Thread 5,5,main]) started.
+:app:generateAutolinkingNewArchitectureFiles (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:generateAutolinkingNewArchitectureFiles UP-TO-DATE
+Caching disabled for task ':app:generateAutolinkingNewArchitectureFiles' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':app:generateAutolinkingNewArchitectureFiles' as it is up-to-date.
+Resolve mutations for :app:generateAutolinkingPackageList (Thread[Execution worker Thread 5,5,main]) started.
+:app:generateAutolinkingPackageList (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:generateAutolinkingPackageList UP-TO-DATE
+Caching disabled for task ':app:generateAutolinkingPackageList' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':app:generateAutolinkingPackageList' as it is up-to-date.
+Resolve mutations for :app:generateCodegenSchemaFromJavaScript (Thread[Execution worker Thread 5,5,main]) started.
+:app:generateCodegenSchemaFromJavaScript (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:generateCodegenSchemaFromJavaScript UP-TO-DATE
+Caching disabled for task ':app:generateCodegenSchemaFromJavaScript' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':app:generateCodegenSchemaFromJavaScript' as it is up-to-date.
+Resolve mutations for :app:generateCodegenArtifactsFromSchema (Thread[Execution worker Thread 5,5,main]) started.
+:app:generateCodegenArtifactsFromSchema (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:generateCodegenArtifactsFromSchema UP-TO-DATE
+Caching disabled for task ':app:generateCodegenArtifactsFromSchema' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':app:generateCodegenArtifactsFromSchema' as it is up-to-date.
+Resolve mutations for :app:generateReactNativeEntryPoint (Thread[Execution worker Thread 5,5,main]) started.
+:app:generateReactNativeEntryPoint (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:generateReactNativeEntryPoint UP-TO-DATE
+Caching disabled for task ':app:generateReactNativeEntryPoint' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':app:generateReactNativeEntryPoint' as it is up-to-date.
+Resolve mutations for :react-native-gesture-handler:generateCodegenSchemaFromJavaScript (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-gesture-handler:generateCodegenSchemaFromJavaScript (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-gesture-handler:generateCodegenSchemaFromJavaScript UP-TO-DATE
+Caching disabled for task ':react-native-gesture-handler:generateCodegenSchemaFromJavaScript' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':react-native-gesture-handler:generateCodegenSchemaFromJavaScript' as it is up-to-date.
+Resolve mutations for :react-native-gesture-handler:generateCodegenArtifactsFromSchema (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-gesture-handler:generateCodegenArtifactsFromSchema (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-gesture-handler:generateCodegenArtifactsFromSchema UP-TO-DATE
+Caching disabled for task ':react-native-gesture-handler:generateCodegenArtifactsFromSchema' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':react-native-gesture-handler:generateCodegenArtifactsFromSchema' as it is up-to-date.
+Resolve mutations for :react-native-gesture-handler:preBuild (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-gesture-handler:preBuild (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-gesture-handler:preBuild UP-TO-DATE
+Skipping task ':react-native-gesture-handler:preBuild' as it has no actions.
+Resolve mutations for :react-native-mmkv:generateCodegenSchemaFromJavaScript (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-mmkv:generateCodegenSchemaFromJavaScript (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-mmkv:generateCodegenSchemaFromJavaScript UP-TO-DATE
+Caching disabled for task ':react-native-mmkv:generateCodegenSchemaFromJavaScript' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':react-native-mmkv:generateCodegenSchemaFromJavaScript' as it is up-to-date.
+Resolve mutations for :react-native-mmkv:generateCodegenArtifactsFromSchema (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-mmkv:generateCodegenArtifactsFromSchema (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-mmkv:generateCodegenArtifactsFromSchema UP-TO-DATE
+Caching disabled for task ':react-native-mmkv:generateCodegenArtifactsFromSchema' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':react-native-mmkv:generateCodegenArtifactsFromSchema' as it is up-to-date.
+Resolve mutations for :react-native-mmkv:preBuild (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-mmkv:preBuild (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-mmkv:preBuild UP-TO-DATE
+Skipping task ':react-native-mmkv:preBuild' as it has no actions.
+Resolve mutations for :react-native-reanimated:assertMinimalReactNativeVersionTask (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-reanimated:assertMinimalReactNativeVersionTask (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-reanimated:assertMinimalReactNativeVersionTask
+Caching disabled for task ':react-native-reanimated:assertMinimalReactNativeVersionTask' because:
+  Build cache is disabled
+Task ':react-native-reanimated:assertMinimalReactNativeVersionTask' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Starting process 'command 'node''. Working directory: /Users/mn20/Projects/HistoryOfLibrary/node_modules/react-native-reanimated/android Command: node ./../scripts/validate-react-native-version.js 0.82.0
+Successfully started process 'command 'node''
+Resolve mutations for :react-native-reanimated:assertNewArchitectureEnabledTask (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-reanimated:assertNewArchitectureEnabledTask (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-reanimated:assertNewArchitectureEnabledTask SKIPPED
+Skipping task ':react-native-reanimated:assertNewArchitectureEnabledTask' as task onlyIf 'Task satisfies onlyIf closure' is false.
+Resolve mutations for :react-native-reanimated:assertWorkletsVersionTask (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-reanimated:assertWorkletsVersionTask (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-reanimated:assertWorkletsVersionTask
+Caching disabled for task ':react-native-reanimated:assertWorkletsVersionTask' because:
+  Build cache is disabled
+Task ':react-native-reanimated:assertWorkletsVersionTask' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Starting process 'command 'node''. Working directory: /Users/mn20/Projects/HistoryOfLibrary/node_modules/react-native-reanimated/android Command: node ./../scripts/validate-worklets-build.js
+Successfully started process 'command 'node''
+Resolve mutations for :react-native-reanimated:generateCodegenSchemaFromJavaScript (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-reanimated:generateCodegenSchemaFromJavaScript (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-reanimated:generateCodegenSchemaFromJavaScript UP-TO-DATE
+Caching disabled for task ':react-native-reanimated:generateCodegenSchemaFromJavaScript' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':react-native-reanimated:generateCodegenSchemaFromJavaScript' as it is up-to-date.
+Resolve mutations for :react-native-reanimated:generateCodegenArtifactsFromSchema (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-reanimated:generateCodegenArtifactsFromSchema (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-reanimated:generateCodegenArtifactsFromSchema UP-TO-DATE
+Caching disabled for task ':react-native-reanimated:generateCodegenArtifactsFromSchema' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':react-native-reanimated:generateCodegenArtifactsFromSchema' as it is up-to-date.
+Resolve mutations for :react-native-reanimated:prepareReanimatedHeadersForPrefabs (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-reanimated:prepareReanimatedHeadersForPrefabs (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-reanimated:prepareReanimatedHeadersForPrefabs UP-TO-DATE
+Caching disabled for task ':react-native-reanimated:prepareReanimatedHeadersForPrefabs' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':react-native-reanimated:prepareReanimatedHeadersForPrefabs' as it is up-to-date.
+Resolve mutations for :react-native-reanimated:preBuild (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-reanimated:preBuild (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-reanimated:preBuild
+Skipping task ':react-native-reanimated:preBuild' as it has no actions.
+Resolve mutations for :react-native-safe-area-context:generateCodegenSchemaFromJavaScript (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-safe-area-context:generateCodegenSchemaFromJavaScript (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-safe-area-context:generateCodegenSchemaFromJavaScript UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:generateCodegenSchemaFromJavaScript' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':react-native-safe-area-context:generateCodegenSchemaFromJavaScript' as it is up-to-date.
+Resolve mutations for :react-native-safe-area-context:generateCodegenArtifactsFromSchema (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-safe-area-context:generateCodegenArtifactsFromSchema (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-safe-area-context:generateCodegenArtifactsFromSchema UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:generateCodegenArtifactsFromSchema' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':react-native-safe-area-context:generateCodegenArtifactsFromSchema' as it is up-to-date.
+Resolve mutations for :react-native-safe-area-context:preBuild (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-safe-area-context:preBuild (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-safe-area-context:preBuild UP-TO-DATE
+Skipping task ':react-native-safe-area-context:preBuild' as it has no actions.
+Resolve mutations for :react-native-screens:generateCodegenSchemaFromJavaScript (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-screens:generateCodegenSchemaFromJavaScript (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-screens:generateCodegenSchemaFromJavaScript UP-TO-DATE
+Caching disabled for task ':react-native-screens:generateCodegenSchemaFromJavaScript' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':react-native-screens:generateCodegenSchemaFromJavaScript' as it is up-to-date.
+Resolve mutations for :react-native-screens:generateCodegenArtifactsFromSchema (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-screens:generateCodegenArtifactsFromSchema (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-screens:generateCodegenArtifactsFromSchema UP-TO-DATE
+Caching disabled for task ':react-native-screens:generateCodegenArtifactsFromSchema' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':react-native-screens:generateCodegenArtifactsFromSchema' as it is up-to-date.
+Resolve mutations for :react-native-screens:preBuild (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-screens:preBuild (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-screens:preBuild UP-TO-DATE
+Skipping task ':react-native-screens:preBuild' as it has no actions.
+Resolve mutations for :react-native-worklets:assertMinimalReactNativeVersionTask (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-worklets:assertMinimalReactNativeVersionTask (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-worklets:assertMinimalReactNativeVersionTask
+Caching disabled for task ':react-native-worklets:assertMinimalReactNativeVersionTask' because:
+  Build cache is disabled
+Task ':react-native-worklets:assertMinimalReactNativeVersionTask' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Starting process 'command 'node''. Working directory: /Users/mn20/Projects/HistoryOfLibrary/node_modules/react-native-worklets/android Command: node ./../scripts/validate-react-native-version.js 0.82.0
+Successfully started process 'command 'node''
+Resolve mutations for :react-native-worklets:assertNewArchitectureEnabledTask (Thread[Execution worker Thread 7,5,main]) started.
+:react-native-worklets:assertNewArchitectureEnabledTask (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :react-native-worklets:assertNewArchitectureEnabledTask SKIPPED
+Skipping task ':react-native-worklets:assertNewArchitectureEnabledTask' as task onlyIf 'Task satisfies onlyIf closure' is false.
+Resolve mutations for :react-native-worklets:generateCodegenSchemaFromJavaScript (Thread[Execution worker Thread 7,5,main]) started.
+:react-native-worklets:generateCodegenSchemaFromJavaScript (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :react-native-worklets:generateCodegenSchemaFromJavaScript UP-TO-DATE
+Caching disabled for task ':react-native-worklets:generateCodegenSchemaFromJavaScript' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':react-native-worklets:generateCodegenSchemaFromJavaScript' as it is up-to-date.
+Resolve mutations for :react-native-worklets:generateCodegenArtifactsFromSchema (Thread[Execution worker Thread 7,5,main]) started.
+:react-native-worklets:generateCodegenArtifactsFromSchema (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :react-native-worklets:generateCodegenArtifactsFromSchema UP-TO-DATE
+Caching disabled for task ':react-native-worklets:generateCodegenArtifactsFromSchema' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':react-native-worklets:generateCodegenArtifactsFromSchema' as it is up-to-date.
+Resolve mutations for :react-native-worklets:prepareWorkletsHeadersForPrefabs (Thread[Execution worker Thread 7,5,main]) started.
+:react-native-worklets:prepareWorkletsHeadersForPrefabs (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :react-native-worklets:prepareWorkletsHeadersForPrefabs UP-TO-DATE
+Caching disabled for task ':react-native-worklets:prepareWorkletsHeadersForPrefabs' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':react-native-worklets:prepareWorkletsHeadersForPrefabs' as it is up-to-date.
+Resolve mutations for :react-native-worklets:preBuild (Thread[Execution worker Thread 7,5,main]) started.
+:react-native-worklets:preBuild (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :react-native-worklets:preBuild
+Skipping task ':react-native-worklets:preBuild' as it has no actions.
+Resolve mutations for :app:preBuild (Thread[Execution worker Thread 7,5,main]) started.
+:app:preBuild (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :app:preBuild
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preDebugBuild (Thread[Execution worker Thread 7,5,main]) started.
+:app:preDebugBuild (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :app:preDebugBuild
+Skipping task ':app:preDebugBuild' as it has no actions.
+Resolve mutations for :app:generateDebugBuildConfig (Thread[Execution worker Thread 7,5,main]) started.
+:app:generateDebugBuildConfig (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+Caching disabled for task ':app:generateDebugBuildConfig' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugBuildConfig' as it is up-to-date.
+Resolve mutations for :react-native-gesture-handler:preDebugBuild (Thread[Execution worker Thread 7,5,main]) started.
+:react-native-gesture-handler:preDebugBuild (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :react-native-gesture-handler:preDebugBuild UP-TO-DATE
+Skipping task ':react-native-gesture-handler:preDebugBuild' as it has no actions.
+Resolve mutations for :react-native-gesture-handler:writeDebugAarMetadata (Thread[Execution worker Thread 7,5,main]) started.
+:react-native-gesture-handler:writeDebugAarMetadata (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :react-native-gesture-handler:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':react-native-gesture-handler:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-gesture-handler:writeDebugAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :react-native-gesture-handler) (Thread[Execution worker Thread 7,5,main]) started.
+Resolve mutations for :react-native-mmkv:preDebugBuild (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-mmkv:preDebugBuild (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-mmkv:preDebugBuild UP-TO-DATE
+Skipping task ':react-native-mmkv:preDebugBuild' as it has no actions.
+Resolve mutations for :react-native-mmkv:writeDebugAarMetadata (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-mmkv:writeDebugAarMetadata (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-mmkv:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':react-native-mmkv:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-mmkv:writeDebugAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :react-native-mmkv) (Thread[Execution worker Thread 6,5,main]) started.
+Resolve mutations for :react-native-reanimated:preDebugBuild (Thread[Execution worker Thread 6,5,main]) started.
+:react-native-reanimated:preDebugBuild (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :react-native-reanimated:preDebugBuild
+Skipping task ':react-native-reanimated:preDebugBuild' as it has no actions.
+Resolve mutations for :react-native-reanimated:writeDebugAarMetadata (Thread[Execution worker Thread 6,5,main]) started.
+:react-native-reanimated:writeDebugAarMetadata (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :react-native-reanimated:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':react-native-reanimated:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-reanimated:writeDebugAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :react-native-reanimated) (Thread[Execution worker Thread 6,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:preDebugBuild (Thread[Execution worker Thread 6,5,main]) started.
+:react-native-safe-area-context:preDebugBuild (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :react-native-safe-area-context:preDebugBuild UP-TO-DATE
+Skipping task ':react-native-safe-area-context:preDebugBuild' as it has no actions.
+Resolve mutations for :react-native-safe-area-context:writeDebugAarMetadata (Thread[Execution worker Thread 6,5,main]) started.
+:react-native-safe-area-context:writeDebugAarMetadata (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :react-native-safe-area-context:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-safe-area-context:writeDebugAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :react-native-safe-area-context) (Thread[Execution worker Thread 6,5,main]) started.
+Resolve mutations for :react-native-screens:preDebugBuild (Thread[Execution worker Thread 6,5,main]) started.
+:react-native-screens:preDebugBuild (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :react-native-screens:preDebugBuild UP-TO-DATE
+Skipping task ':react-native-screens:preDebugBuild' as it has no actions.
+Resolve mutations for :react-native-screens:writeDebugAarMetadata (Thread[included builds,5,main]) started.
+:react-native-screens:writeDebugAarMetadata (Thread[included builds,5,main]) started.
+
+> Task :react-native-screens:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':react-native-screens:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-screens:writeDebugAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :react-native-screens) (Thread[included builds,5,main]) started.
+Resolve mutations for :react-native-worklets:preDebugBuild (Thread[included builds,5,main]) started.
+:react-native-worklets:preDebugBuild (Thread[included builds,5,main]) started.
+
+> Task :react-native-worklets:preDebugBuild
+Skipping task ':react-native-worklets:preDebugBuild' as it has no actions.
+Resolve mutations for :react-native-worklets:writeDebugAarMetadata (Thread[included builds,5,main]) started.
+:react-native-worklets:writeDebugAarMetadata (Thread[included builds,5,main]) started.
+
+> Task :react-native-worklets:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':react-native-worklets:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-worklets:writeDebugAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :react-native-worklets) (Thread[included builds,5,main]) started.
+Resolve mutations for :app:checkDebugAarMetadata (Thread[included builds,5,main]) started.
+:app:checkDebugAarMetadata (Thread[included builds,5,main]) started.
+
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':app:checkDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:checkDebugAarMetadata' as it is up-to-date.
+Resolve mutations for :app:generateDebugResValues (Thread[included builds,5,main]) started.
+:app:generateDebugResValues (Thread[included builds,5,main]) started.
+
+> Task :app:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':app:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :react-native-gesture-handler:generateDebugResValues (Thread[included builds,5,main]) started.
+:react-native-gesture-handler:generateDebugResValues (Thread[included builds,5,main]) started.
+
+> Task :react-native-gesture-handler:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':react-native-gesture-handler:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':react-native-gesture-handler:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :react-native-gesture-handler:generateDebugResources (Thread[included builds,5,main]) started.
+:react-native-gesture-handler:generateDebugResources (Thread[included builds,5,main]) started.
+
+> Task :react-native-gesture-handler:generateDebugResources UP-TO-DATE
+Caching disabled for task ':react-native-gesture-handler:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':react-native-gesture-handler:generateDebugResources' as it is up-to-date.
+Resolve mutations for :react-native-gesture-handler:packageDebugResources (Thread[included builds,5,main]) started.
+:react-native-gesture-handler:packageDebugResources (Thread[included builds,5,main]) started.
+
+> Task :react-native-gesture-handler:packageDebugResources UP-TO-DATE
+Caching disabled for task ':react-native-gesture-handler:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':react-native-gesture-handler:packageDebugResources' as it is up-to-date.
+work action resolve packageDebugResources (project :react-native-gesture-handler) (Thread[included builds,5,main]) started.
+Resolve mutations for :react-native-mmkv:generateDebugResValues (Thread[included builds,5,main]) started.
+:react-native-mmkv:generateDebugResValues (Thread[included builds,5,main]) started.
+
+> Task :react-native-mmkv:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':react-native-mmkv:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':react-native-mmkv:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :react-native-mmkv:generateDebugResources (Thread[included builds,5,main]) started.
+:react-native-mmkv:generateDebugResources (Thread[included builds,5,main]) started.
+
+> Task :react-native-mmkv:generateDebugResources UP-TO-DATE
+Caching disabled for task ':react-native-mmkv:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':react-native-mmkv:generateDebugResources' as it is up-to-date.
+Resolve mutations for :react-native-mmkv:packageDebugResources (Thread[included builds,5,main]) started.
+:react-native-mmkv:packageDebugResources (Thread[included builds,5,main]) started.
+
+> Task :react-native-mmkv:packageDebugResources UP-TO-DATE
+Caching disabled for task ':react-native-mmkv:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':react-native-mmkv:packageDebugResources' as it is up-to-date.
+work action resolve packageDebugResources (project :react-native-mmkv) (Thread[included builds,5,main]) started.
+Resolve mutations for :react-native-reanimated:generateDebugResValues (Thread[included builds,5,main]) started.
+:react-native-reanimated:generateDebugResValues (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-reanimated:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':react-native-reanimated:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':react-native-reanimated:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :react-native-reanimated:generateDebugResources (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-reanimated:generateDebugResources (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-reanimated:generateDebugResources UP-TO-DATE
+Caching disabled for task ':react-native-reanimated:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':react-native-reanimated:generateDebugResources' as it is up-to-date.
+Resolve mutations for :react-native-reanimated:packageDebugResources (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-reanimated:packageDebugResources (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-reanimated:packageDebugResources UP-TO-DATE
+Caching disabled for task ':react-native-reanimated:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':react-native-reanimated:packageDebugResources' as it is up-to-date.
+work action resolve packageDebugResources (project :react-native-reanimated) (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:generateDebugResValues (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-safe-area-context:generateDebugResValues (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-safe-area-context:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :react-native-safe-area-context:generateDebugResources (Thread[Execution worker,5,main]) started.
+:react-native-safe-area-context:generateDebugResources (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-safe-area-context:generateDebugResources UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:generateDebugResources' as it is up-to-date.
+Resolve mutations for :react-native-safe-area-context:packageDebugResources (Thread[Execution worker,5,main]) started.
+:react-native-safe-area-context:packageDebugResources (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-safe-area-context:packageDebugResources UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:packageDebugResources' as it is up-to-date.
+work action resolve packageDebugResources (project :react-native-safe-area-context) (Thread[Execution worker,5,main]) started.
+Resolve mutations for :react-native-screens:generateDebugResValues (Thread[Execution worker,5,main]) started.
+:react-native-screens:generateDebugResValues (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-screens:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':react-native-screens:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :react-native-screens:generateDebugResources (Thread[Execution worker,5,main]) started.
+:react-native-screens:generateDebugResources (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-screens:generateDebugResources UP-TO-DATE
+Caching disabled for task ':react-native-screens:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:generateDebugResources' as it is up-to-date.
+Resolve mutations for :react-native-screens:packageDebugResources (Thread[Execution worker,5,main]) started.
+:react-native-screens:packageDebugResources (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-screens:packageDebugResources UP-TO-DATE
+Caching disabled for task ':react-native-screens:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:packageDebugResources' as it is up-to-date.
+work action resolve packageDebugResources (project :react-native-screens) (Thread[Execution worker,5,main]) started.
+Resolve mutations for :react-native-worklets:generateDebugResValues (Thread[Execution worker,5,main]) started.
+:react-native-worklets:generateDebugResValues (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-worklets:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':react-native-worklets:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':react-native-worklets:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :react-native-worklets:generateDebugResources (Thread[Execution worker,5,main]) started.
+:react-native-worklets:generateDebugResources (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-worklets:generateDebugResources UP-TO-DATE
+Caching disabled for task ':react-native-worklets:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':react-native-worklets:generateDebugResources' as it is up-to-date.
+Resolve mutations for :react-native-worklets:packageDebugResources (Thread[Execution worker,5,main]) started.
+:react-native-worklets:packageDebugResources (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-worklets:packageDebugResources UP-TO-DATE
+Caching disabled for task ':react-native-worklets:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':react-native-worklets:packageDebugResources' as it is up-to-date.
+work action resolve packageDebugResources (project :react-native-worklets) (Thread[Execution worker,5,main]) started.
+Resolve mutations for :app:mapDebugSourceSetPaths (Thread[Execution worker,5,main]) started.
+:app:mapDebugSourceSetPaths (Thread[Execution worker,5,main]) started.
+
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+Caching disabled for task ':app:mapDebugSourceSetPaths' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:mapDebugSourceSetPaths' as it is up-to-date.
+Resolve mutations for :app:generateDebugResources (Thread[Execution worker,5,main]) started.
+:app:generateDebugResources (Thread[Execution worker,5,main]) started.
+
+> Task :app:generateDebugResources UP-TO-DATE
+Caching disabled for task ':app:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResources' as it is up-to-date.
+Resolve mutations for :app:mergeDebugResources (Thread[Execution worker,5,main]) started.
+:app:mergeDebugResources (Thread[Execution worker,5,main]) started.
+
+> Task :app:mergeDebugResources UP-TO-DATE
+Caching disabled for task ':app:mergeDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:mergeDebugResources' as it is up-to-date.
+Resolve mutations for :app:packageDebugResources (Thread[Execution worker,5,main]) started.
+:app:packageDebugResources (Thread[Execution worker,5,main]) started.
+
+> Task :app:packageDebugResources UP-TO-DATE
+Caching disabled for task ':app:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:packageDebugResources' as it is up-to-date.
+Resolve mutations for :app:parseDebugLocalResources (Thread[Execution worker,5,main]) started.
+:app:parseDebugLocalResources (Thread[Execution worker,5,main]) started.
+
+> Task :app:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':app:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':app:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :app:createDebugCompatibleScreenManifests (Thread[Execution worker,5,main]) started.
+:app:createDebugCompatibleScreenManifests (Thread[Execution worker,5,main]) started.
+
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+Caching disabled for task ':app:createDebugCompatibleScreenManifests' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:createDebugCompatibleScreenManifests' as it is up-to-date.
+Resolve mutations for :app:extractDeepLinksDebug (Thread[Execution worker,5,main]) started.
+:app:extractDeepLinksDebug (Thread[Execution worker,5,main]) started.
+
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':app:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':app:extractDeepLinksDebug' as it is up-to-date.
+Resolve mutations for :react-native-gesture-handler:extractDeepLinksDebug (Thread[Execution worker,5,main]) started.
+:react-native-gesture-handler:extractDeepLinksDebug (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-gesture-handler:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':react-native-gesture-handler:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':react-native-gesture-handler:extractDeepLinksDebug' as it is up-to-date.
+work action resolve navigation.json (project :react-native-gesture-handler) (Thread[Execution worker,5,main]) started.
+Resolve mutations for :react-native-gesture-handler:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-gesture-handler:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-gesture-handler:processDebugManifest UP-TO-DATE
+Caching disabled for task ':react-native-gesture-handler:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':react-native-gesture-handler:processDebugManifest' as it is up-to-date.
+work action resolve AndroidManifest.xml (project :react-native-gesture-handler) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-mmkv:extractDeepLinksDebug (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-mmkv:extractDeepLinksDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-mmkv:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':react-native-mmkv:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':react-native-mmkv:extractDeepLinksDebug' as it is up-to-date.
+work action resolve navigation.json (project :react-native-mmkv) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-mmkv:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-mmkv:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-mmkv:processDebugManifest UP-TO-DATE
+Caching disabled for task ':react-native-mmkv:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':react-native-mmkv:processDebugManifest' as it is up-to-date.
+work action resolve AndroidManifest.xml (project :react-native-mmkv) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-reanimated:extractDeepLinksDebug (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-reanimated:extractDeepLinksDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-reanimated:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':react-native-reanimated:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':react-native-reanimated:extractDeepLinksDebug' as it is up-to-date.
+work action resolve navigation.json (project :react-native-reanimated) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-reanimated:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-reanimated:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-reanimated:processDebugManifest UP-TO-DATE
+Caching disabled for task ':react-native-reanimated:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':react-native-reanimated:processDebugManifest' as it is up-to-date.
+work action resolve AndroidManifest.xml (project :react-native-reanimated) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:extractDeepLinksDebug (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-safe-area-context:extractDeepLinksDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-safe-area-context:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:extractDeepLinksDebug' as it is up-to-date.
+work action resolve navigation.json (project :react-native-safe-area-context) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-safe-area-context:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-safe-area-context:processDebugManifest UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:processDebugManifest' as it is up-to-date.
+work action resolve AndroidManifest.xml (project :react-native-safe-area-context) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-screens:extractDeepLinksDebug (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-screens:extractDeepLinksDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-screens:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':react-native-screens:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:extractDeepLinksDebug' as it is up-to-date.
+work action resolve navigation.json (project :react-native-screens) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-screens:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-screens:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-screens:processDebugManifest UP-TO-DATE
+Caching disabled for task ':react-native-screens:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:processDebugManifest' as it is up-to-date.
+work action resolve AndroidManifest.xml (project :react-native-screens) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-worklets:extractDeepLinksDebug (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-worklets:extractDeepLinksDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-worklets:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':react-native-worklets:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':react-native-worklets:extractDeepLinksDebug' as it is up-to-date.
+work action resolve navigation.json (project :react-native-worklets) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-worklets:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-worklets:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-worklets:processDebugManifest UP-TO-DATE
+Caching disabled for task ':react-native-worklets:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':react-native-worklets:processDebugManifest' as it is up-to-date.
+work action resolve AndroidManifest.xml (project :react-native-worklets) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :app:processDebugMainManifest (Thread[Execution worker Thread 4,5,main]) started.
+:app:processDebugMainManifest (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:processDebugMainManifest UP-TO-DATE
+Caching disabled for task ':app:processDebugMainManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugMainManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+:app:processDebugManifest (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:processDebugManifest UP-TO-DATE
+Caching disabled for task ':app:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifestForPackage (Thread[Execution worker Thread 4,5,main]) started.
+:app:processDebugManifestForPackage (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+Custom actions are attached to task ':app:processDebugManifestForPackage'.
+Caching disabled for task ':app:processDebugManifestForPackage' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifestForPackage' as it is up-to-date.
+Resolve mutations for :react-native-gesture-handler:compileDebugLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-gesture-handler:compileDebugLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-gesture-handler:compileDebugLibraryResources UP-TO-DATE
+Caching disabled for task ':react-native-gesture-handler:compileDebugLibraryResources' because:
+  Build cache is disabled
+Skipping task ':react-native-gesture-handler:compileDebugLibraryResources' as it is up-to-date.
+work action resolve out (project :react-native-gesture-handler) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-gesture-handler:parseDebugLocalResources (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-gesture-handler:parseDebugLocalResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-gesture-handler:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':react-native-gesture-handler:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':react-native-gesture-handler:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :react-native-gesture-handler:generateDebugRFile (Thread[Execution worker Thread 6,5,main]) started.
+:react-native-gesture-handler:generateDebugRFile (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-gesture-handler:generateDebugRFile UP-TO-DATE
+Caching disabled for task ':react-native-gesture-handler:generateDebugRFile' because:
+  Build cache is disabled
+Skipping task ':react-native-gesture-handler:generateDebugRFile' as it is up-to-date.
+work action resolve package-aware-r.txt (project :react-native-gesture-handler) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-mmkv:compileDebugLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-mmkv:compileDebugLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-mmkv:compileDebugLibraryResources UP-TO-DATE
+Caching disabled for task ':react-native-mmkv:compileDebugLibraryResources' because:
+  Build cache is disabled
+Skipping task ':react-native-mmkv:compileDebugLibraryResources' as it is up-to-date.
+work action resolve out (project :react-native-mmkv) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-mmkv:parseDebugLocalResources (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-mmkv:parseDebugLocalResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-mmkv:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':react-native-mmkv:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':react-native-mmkv:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :react-native-mmkv:generateDebugRFile (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-mmkv:generateDebugRFile (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-mmkv:generateDebugRFile UP-TO-DATE
+Caching disabled for task ':react-native-mmkv:generateDebugRFile' because:
+  Build cache is disabled
+Skipping task ':react-native-mmkv:generateDebugRFile' as it is up-to-date.
+work action resolve package-aware-r.txt (project :react-native-mmkv) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-reanimated:compileDebugLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-reanimated:compileDebugLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-reanimated:compileDebugLibraryResources UP-TO-DATE
+Caching disabled for task ':react-native-reanimated:compileDebugLibraryResources' because:
+  Build cache is disabled
+Skipping task ':react-native-reanimated:compileDebugLibraryResources' as it is up-to-date.
+work action resolve out (project :react-native-reanimated) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-reanimated:parseDebugLocalResources (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-reanimated:parseDebugLocalResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-reanimated:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':react-native-reanimated:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':react-native-reanimated:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :react-native-reanimated:generateDebugRFile (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-reanimated:generateDebugRFile (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-reanimated:generateDebugRFile UP-TO-DATE
+Caching disabled for task ':react-native-reanimated:generateDebugRFile' because:
+  Build cache is disabled
+Skipping task ':react-native-reanimated:generateDebugRFile' as it is up-to-date.
+work action resolve package-aware-r.txt (project :react-native-reanimated) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:compileDebugLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-safe-area-context:compileDebugLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-safe-area-context:compileDebugLibraryResources UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:compileDebugLibraryResources' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:compileDebugLibraryResources' as it is up-to-date.
+work action resolve out (project :react-native-safe-area-context) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:parseDebugLocalResources (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-safe-area-context:parseDebugLocalResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-safe-area-context:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :react-native-safe-area-context:generateDebugRFile (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-safe-area-context:generateDebugRFile (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-safe-area-context:generateDebugRFile UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:generateDebugRFile' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:generateDebugRFile' as it is up-to-date.
+work action resolve package-aware-r.txt (project :react-native-safe-area-context) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-screens:compileDebugLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-screens:compileDebugLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-screens:compileDebugLibraryResources UP-TO-DATE
+Caching disabled for task ':react-native-screens:compileDebugLibraryResources' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:compileDebugLibraryResources' as it is up-to-date.
+work action resolve out (project :react-native-screens) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-screens:parseDebugLocalResources (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-screens:parseDebugLocalResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-screens:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':react-native-screens:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :react-native-screens:generateDebugRFile (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-screens:generateDebugRFile (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-screens:generateDebugRFile UP-TO-DATE
+Caching disabled for task ':react-native-screens:generateDebugRFile' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:generateDebugRFile' as it is up-to-date.
+work action resolve package-aware-r.txt (project :react-native-screens) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-worklets:compileDebugLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-worklets:compileDebugLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-worklets:compileDebugLibraryResources UP-TO-DATE
+Caching disabled for task ':react-native-worklets:compileDebugLibraryResources' because:
+  Build cache is disabled
+Skipping task ':react-native-worklets:compileDebugLibraryResources' as it is up-to-date.
+work action resolve out (project :react-native-worklets) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-worklets:parseDebugLocalResources (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-worklets:parseDebugLocalResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-worklets:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':react-native-worklets:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':react-native-worklets:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :react-native-worklets:generateDebugRFile (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-worklets:generateDebugRFile (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-worklets:generateDebugRFile UP-TO-DATE
+Caching disabled for task ':react-native-worklets:generateDebugRFile' because:
+  Build cache is disabled
+Skipping task ':react-native-worklets:generateDebugRFile' as it is up-to-date.
+work action resolve package-aware-r.txt (project :react-native-worklets) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :app:processDebugResources (Thread[Execution worker Thread 4,5,main]) started.
+:app:processDebugResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:processDebugResources UP-TO-DATE
+Caching disabled for task ':app:processDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:processDebugResources' as it is up-to-date.
+Resolve mutations for :react-native-gesture-handler:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-gesture-handler:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-gesture-handler:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':react-native-gesture-handler:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :react-native-gesture-handler:generateDebugBuildConfig (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-gesture-handler:generateDebugBuildConfig (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-gesture-handler:generateDebugBuildConfig UP-TO-DATE
+Caching disabled for task ':react-native-gesture-handler:generateDebugBuildConfig' because:
+  Build cache is disabled
+Skipping task ':react-native-gesture-handler:generateDebugBuildConfig' as it is up-to-date.
+Resolve mutations for :react-native-reanimated:generateDebugBuildConfig (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-reanimated:generateDebugBuildConfig (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-reanimated:generateDebugBuildConfig UP-TO-DATE
+Caching disabled for task ':react-native-reanimated:generateDebugBuildConfig' because:
+  Build cache is disabled
+Skipping task ':react-native-reanimated:generateDebugBuildConfig' as it is up-to-date.
+Resolve mutations for :react-native-reanimated:javaPreCompileDebug (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-reanimated:javaPreCompileDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-reanimated:javaPreCompileDebug UP-TO-DATE
+Caching disabled for task ':react-native-reanimated:javaPreCompileDebug' because:
+  Build cache is disabled
+Skipping task ':react-native-reanimated:javaPreCompileDebug' as it is up-to-date.
+Resolve mutations for :react-native-worklets:generateDebugBuildConfig (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-worklets:generateDebugBuildConfig (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-worklets:generateDebugBuildConfig UP-TO-DATE
+Caching disabled for task ':react-native-worklets:generateDebugBuildConfig' because:
+  Build cache is disabled
+Skipping task ':react-native-worklets:generateDebugBuildConfig' as it is up-to-date.
+Resolve mutations for :react-native-worklets:javaPreCompileDebug (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-worklets:javaPreCompileDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-worklets:javaPreCompileDebug UP-TO-DATE
+Caching disabled for task ':react-native-worklets:javaPreCompileDebug' because:
+  Build cache is disabled
+Skipping task ':react-native-worklets:javaPreCompileDebug' as it is up-to-date.
+Resolve mutations for :react-native-worklets:compileDebugJavaWithJavac (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-worklets:compileDebugJavaWithJavac (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-worklets:compileDebugJavaWithJavac UP-TO-DATE
+Custom actions are attached to task ':react-native-worklets:compileDebugJavaWithJavac'.
+Caching disabled for task ':react-native-worklets:compileDebugJavaWithJavac' because:
+  Build cache is disabled
+Skipping task ':react-native-worklets:compileDebugJavaWithJavac' as it is up-to-date.
+No compile result for :react-native-worklets:compileDebugJavaWithJavac
+No compile result for :react-native-worklets:compileDebugJavaWithJavac
+Resolve mutations for :react-native-worklets:bundleLibCompileToJarDebug (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-worklets:bundleLibCompileToJarDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-worklets:bundleLibCompileToJarDebug UP-TO-DATE
+Caching disabled for task ':react-native-worklets:bundleLibCompileToJarDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':react-native-worklets:bundleLibCompileToJarDebug' as it is up-to-date.
+work action resolve classes.jar (project :react-native-worklets) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-reanimated:compileDebugJavaWithJavac (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-reanimated:compileDebugJavaWithJavac (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-reanimated:compileDebugJavaWithJavac UP-TO-DATE
+Custom actions are attached to task ':react-native-reanimated:compileDebugJavaWithJavac'.
+Caching disabled for task ':react-native-reanimated:compileDebugJavaWithJavac' because:
+  Build cache is disabled
+Skipping task ':react-native-reanimated:compileDebugJavaWithJavac' as it is up-to-date.
+No compile result for :react-native-reanimated:compileDebugJavaWithJavac
+No compile result for :react-native-reanimated:compileDebugJavaWithJavac
+Resolve mutations for :react-native-reanimated:bundleLibCompileToJarDebug (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-reanimated:bundleLibCompileToJarDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-reanimated:bundleLibCompileToJarDebug UP-TO-DATE
+Caching disabled for task ':react-native-reanimated:bundleLibCompileToJarDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':react-native-reanimated:bundleLibCompileToJarDebug' as it is up-to-date.
+work action resolve classes.jar (project :react-native-reanimated) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-gesture-handler:compileDebugKotlin (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-gesture-handler:compileDebugKotlin (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-gesture-handler:compileDebugKotlin UP-TO-DATE
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :react-native-gesture-handler:compileDebugAndroidTestKotlin
+Caching disabled for task ':react-native-gesture-handler:compileDebugKotlin' because:
+  Build cache is disabled
+Skipping task ':react-native-gesture-handler:compileDebugKotlin' as it is up-to-date.
+Resolve mutations for :react-native-gesture-handler:javaPreCompileDebug (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-gesture-handler:javaPreCompileDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-gesture-handler:javaPreCompileDebug UP-TO-DATE
+Caching disabled for task ':react-native-gesture-handler:javaPreCompileDebug' because:
+  Build cache is disabled
+Skipping task ':react-native-gesture-handler:javaPreCompileDebug' as it is up-to-date.
+Resolve mutations for :react-native-gesture-handler:compileDebugJavaWithJavac (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-gesture-handler:compileDebugJavaWithJavac (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-gesture-handler:compileDebugJavaWithJavac UP-TO-DATE
+Custom actions are attached to task ':react-native-gesture-handler:compileDebugJavaWithJavac'.
+Caching disabled for task ':react-native-gesture-handler:compileDebugJavaWithJavac' because:
+  Build cache is disabled
+Skipping task ':react-native-gesture-handler:compileDebugJavaWithJavac' as it is up-to-date.
+No compile result for :react-native-gesture-handler:compileDebugJavaWithJavac
+No compile result for :react-native-gesture-handler:compileDebugJavaWithJavac
+Resolve mutations for :react-native-gesture-handler:bundleLibCompileToJarDebug (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-gesture-handler:bundleLibCompileToJarDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-gesture-handler:bundleLibCompileToJarDebug UP-TO-DATE
+Caching disabled for task ':react-native-gesture-handler:bundleLibCompileToJarDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':react-native-gesture-handler:bundleLibCompileToJarDebug' as it is up-to-date.
+work action resolve classes.jar (project :react-native-gesture-handler) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-mmkv:generateDebugBuildConfig (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-mmkv:generateDebugBuildConfig (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-mmkv:generateDebugBuildConfig UP-TO-DATE
+Caching disabled for task ':react-native-mmkv:generateDebugBuildConfig' because:
+  Build cache is disabled
+Skipping task ':react-native-mmkv:generateDebugBuildConfig' as it is up-to-date.
+Resolve mutations for :react-native-mmkv:javaPreCompileDebug (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-mmkv:javaPreCompileDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-mmkv:javaPreCompileDebug UP-TO-DATE
+Caching disabled for task ':react-native-mmkv:javaPreCompileDebug' because:
+  Build cache is disabled
+Skipping task ':react-native-mmkv:javaPreCompileDebug' as it is up-to-date.
+Resolve mutations for :react-native-mmkv:compileDebugJavaWithJavac (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-mmkv:compileDebugJavaWithJavac (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-mmkv:compileDebugJavaWithJavac UP-TO-DATE
+Custom actions are attached to task ':react-native-mmkv:compileDebugJavaWithJavac'.
+Caching disabled for task ':react-native-mmkv:compileDebugJavaWithJavac' because:
+  Build cache is disabled
+Skipping task ':react-native-mmkv:compileDebugJavaWithJavac' as it is up-to-date.
+No compile result for :react-native-mmkv:compileDebugJavaWithJavac
+No compile result for :react-native-mmkv:compileDebugJavaWithJavac
+Resolve mutations for :react-native-mmkv:bundleLibCompileToJarDebug (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-mmkv:bundleLibCompileToJarDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-mmkv:bundleLibCompileToJarDebug UP-TO-DATE
+Caching disabled for task ':react-native-mmkv:bundleLibCompileToJarDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':react-native-mmkv:bundleLibCompileToJarDebug' as it is up-to-date.
+work action resolve classes.jar (project :react-native-mmkv) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :react-native-safe-area-context:generateDebugBuildConfig (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-safe-area-context:generateDebugBuildConfig (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-safe-area-context:generateDebugBuildConfig UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:generateDebugBuildConfig' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:generateDebugBuildConfig' as it is up-to-date.
+Resolve mutations for :react-native-safe-area-context:compileDebugKotlin (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-safe-area-context:compileDebugKotlin (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-safe-area-context:compileDebugKotlin UP-TO-DATE
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :react-native-safe-area-context:compileDebugAndroidTestKotlin
+Caching disabled for task ':react-native-safe-area-context:compileDebugKotlin' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:compileDebugKotlin' as it is up-to-date.
+Resolve mutations for :react-native-safe-area-context:javaPreCompileDebug (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-safe-area-context:javaPreCompileDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-safe-area-context:javaPreCompileDebug UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:javaPreCompileDebug' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:javaPreCompileDebug' as it is up-to-date.
+Resolve mutations for :react-native-safe-area-context:compileDebugJavaWithJavac (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-safe-area-context:compileDebugJavaWithJavac (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-safe-area-context:compileDebugJavaWithJavac UP-TO-DATE
+Custom actions are attached to task ':react-native-safe-area-context:compileDebugJavaWithJavac'.
+Caching disabled for task ':react-native-safe-area-context:compileDebugJavaWithJavac' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:compileDebugJavaWithJavac' as it is up-to-date.
+No compile result for :react-native-safe-area-context:compileDebugJavaWithJavac
+No compile result for :react-native-safe-area-context:compileDebugJavaWithJavac
+Resolve mutations for :react-native-safe-area-context:bundleLibCompileToJarDebug (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-safe-area-context:bundleLibCompileToJarDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-safe-area-context:bundleLibCompileToJarDebug UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:bundleLibCompileToJarDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':react-native-safe-area-context:bundleLibCompileToJarDebug' as it is up-to-date.
+work action resolve classes.jar (project :react-native-safe-area-context) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-screens:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-screens:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-screens:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':react-native-screens:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :react-native-screens:generateDebugBuildConfig (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-screens:generateDebugBuildConfig (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-screens:generateDebugBuildConfig UP-TO-DATE
+Caching disabled for task ':react-native-screens:generateDebugBuildConfig' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:generateDebugBuildConfig' as it is up-to-date.
+Resolve mutations for :react-native-screens:compileDebugKotlin (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-screens:compileDebugKotlin (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-screens:compileDebugKotlin UP-TO-DATE
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :react-native-screens:compileDebugAndroidTestKotlin
+Caching disabled for task ':react-native-screens:compileDebugKotlin' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:compileDebugKotlin' as it is up-to-date.
+Resolve mutations for :react-native-screens:javaPreCompileDebug (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-screens:javaPreCompileDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-screens:javaPreCompileDebug UP-TO-DATE
+Caching disabled for task ':react-native-screens:javaPreCompileDebug' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:javaPreCompileDebug' as it is up-to-date.
+Resolve mutations for :react-native-screens:compileDebugJavaWithJavac (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-screens:compileDebugJavaWithJavac (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-screens:compileDebugJavaWithJavac UP-TO-DATE
+Custom actions are attached to task ':react-native-screens:compileDebugJavaWithJavac'.
+Caching disabled for task ':react-native-screens:compileDebugJavaWithJavac' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:compileDebugJavaWithJavac' as it is up-to-date.
+No compile result for :react-native-screens:compileDebugJavaWithJavac
+No compile result for :react-native-screens:compileDebugJavaWithJavac
+Resolve mutations for :react-native-screens:bundleLibCompileToJarDebug (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-screens:bundleLibCompileToJarDebug (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-screens:bundleLibCompileToJarDebug UP-TO-DATE
+Caching disabled for task ':react-native-screens:bundleLibCompileToJarDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':react-native-screens:bundleLibCompileToJarDebug' as it is up-to-date.
+work action resolve classes.jar (project :react-native-screens) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :app:compileDebugKotlin (Thread[Execution worker Thread 4,5,main]) started.
+:app:compileDebugKotlin (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:compileDebugKotlin FAILED
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugAndroidTestKotlin
+Caching disabled for task ':app:compileDebugKotlin' because:
+  Build cache is disabled
+Task ':app:compileDebugKotlin' is not up-to-date because:
+  Task has failed previously.
+The input changes require a full rebuild for incremental task ':app:compileDebugKotlin'.
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/main/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/main/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/main/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/main/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/main/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/main/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/main/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/main/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/main/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/main/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/main/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/main/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/main/kotlin', not found
+file or directory '/Users/mn20/Projects/HistoryOfLibrary/android/app/src/debug/java', not found
+Kotlin source files: /Users/mn20/Projects/HistoryOfLibrary/android/app/src/main/java/com/nativeBackgorund/NativeLocalStorageModule.kt, /Users/mn20/Projects/HistoryOfLibrary/android/app/src/main/java/com/historyoflibrary/MainActivity.kt, /Users/mn20/Projects/HistoryOfLibrary/android/app/src/main/java/com/historyoflibrary/MainApplication.kt
+Java source files: /Users/mn20/Projects/HistoryOfLibrary/android/app/build/generated/source/codegen/java/com/nativeBackground/NativeBackgroundSpec.java, /Users/mn20/Projects/HistoryOfLibrary/android/app/build/generated/source/buildConfig/debug/com/historyoflibrary/BuildConfig.java, /Users/mn20/Projects/HistoryOfLibrary/android/app/build/generated/autolinking/src/main/java/com/facebook/react/ReactNativeApplicationEntryPoint.java, /Users/mn20/Projects/HistoryOfLibrary/android/app/build/generated/autolinking/src/main/java/com/facebook/react/PackageList.java
+Script source files: 
+Script file extensions: 
+Using Kotlin/JVM incremental compilation
+[KOTLIN] Kotlin compilation 'jdkHome' argument: null
+Options for KOTLIN DAEMON: IncrementalCompilationOptions(super=CompilationOptions(compilerMode=INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0, 3], reportSeverity=2, requestedCompilationResults=[0], kotlinScriptExtensions=[]), sourceChanges=org.jetbrains.kotlin.buildtools.api.SourcesChanges$Unknown@38652b71, classpathChanges=NotAvailableForNonIncrementalRun, workingDir=/Users/mn20/Projects/HistoryOfLibrary/android/app/build/kotlin/compileDebugKotlin/cacheable, multiModuleICSettings=MultiModuleICSettings(buildHistoryFile=/Users/mn20/Projects/HistoryOfLibrary/android/app/build/kotlin/compileDebugKotlin/local-state/build-history.bin, useModuleDetection=true), usePreciseJavaTracking=true, icFeatures=IncrementalCompilationFeatures(withAbiSnapshot=false, preciseCompilationResultsBackup=true, keepIncrementalCompilationCachesInMemory=true, enableUnsafeIncrementalCompilationForMultiplatform=false, enableMonotonousIncrementalCompileSetExpansion=true), outputFiles=[/Users/mn20/Projects/HistoryOfLibrary/android/app/build/tmp/kotlin-classes/debug, /Users/mn20/Projects/HistoryOfLibrary/android/app/build/kotlin/compileDebugKotlin/cacheable, /Users/mn20/Projects/HistoryOfLibrary/android/app/build/kotlin/compileDebugKotlin/local-state])
+Finished executing kotlin compiler using DAEMON strategy
+Build b3ce9412-70af-490e-820a-1ab7c0825170 is closed
+Build 9f83c0a5-0719-4470-bfdd-5e68d33af20b is closed
+
+[Incubating] Problems report is available at: file:///Users/mn20/Projects/HistoryOfLibrary/android/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.0.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+128 actionable tasks: 4 executed, 124 up-to-date
+Watched directory hierarchies: [/Users/mn20/Projects/HistoryOfLibrary/node_modules/@react-native/gradle-plugin, /Users/mn20/Projects/HistoryOfLibrary/android]

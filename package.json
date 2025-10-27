@@ -9,6 +9,14 @@
     "start": "react-native start --reset-cache --client-logs",
     "test": "jest"
   },
+  "codegenConfig": {
+    "name": "NativeBackgroundSpec",
+    "type": "modules",
+    "jsSrcsDir": "specs",
+    "android": {
+      "javaPackageName": "com.nativeBackground"
+    }
+  },
   "dependencies": {
     "@react-native/new-app-screen": "0.82.0",
     "@react-navigation/drawer": "^7.5.10",

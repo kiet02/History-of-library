@@ -29,7 +29,7 @@ export function Main() {
   const { data } = useQuery({
     queryKey: ['posts'],
     queryFn: fetchPosts,
-    staleTime: 1000,
+
     refetchOnMount: false,
     refetchInterval: 1000,
   });
@@ -104,7 +104,7 @@ export function Main() {
       { duration: 350 },
       () => {},
     );
-    runOnJS(() => navi.navigate('ListScreen'))();
+    // runOnJS(() => navi.navigate('ListScreen'))();
   };
 
   return (
